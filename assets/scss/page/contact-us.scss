@@ -1,0 +1,82 @@
+@use "../helpers/variable";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.contact-us {
+  .breadcrumb__sort {
+    padding-top: 16px;
+  }
+  .contact-us-container {
+    background-color: #fff;
+    padding: 30px 30px 70px 24px;
+    form {
+      .form-group {
+        input {
+          width: 75%;
+        }
+        textarea {
+          padding: 14px;
+          width: 75%;
+        }
+        input[name="verify-code"] {
+          width: 30%;
+        }
+      }
+      //   select {
+      //     -webkit-appearance: none;
+      //     -moz-appearance: none;
+      //     padding-right: 20px;
+      //     background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+      //     background-repeat: no-repeat;
+      //     background-position: 100% 50%;
+      //   }
+
+      button {
+        display: flex;
+        margin: 0 auto;
+        &:hover {
+          background-color: variable.$primaryColor;
+        }
+      }
+    }
+  }
+  .contact-list-container {
+    margin-top: 50px;
+    @include media-breakpoint-up(md) {
+      & {
+        margin-top: 0;
+      }
+    }
+    // @media (min-width: 768px) {
+    //   & {
+    //     margin-top: 0;
+    //   }
+    // }
+    .contact-list {
+      li {
+        margin-bottom: 14px;
+        i {
+          margin-right: 5px;
+          font-size: 16px;
+        }
+        a {
+          color: variable.$blackColor;
+          &:hover {
+            color: variable.$primaryColor;
+          }
+        }
+      }
+    }
+    .office-hours {
+      p {
+        line-height: 2.5;
+      }
+    }
+    .google-map {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+}

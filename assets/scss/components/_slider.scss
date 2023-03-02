@@ -1,0 +1,128 @@
+@use "../helpers/variable";
+
+.blog__slider--item {
+  .slider__item--content {
+    margin-top: 10px;
+    h4 {
+      min-height: 70px;
+      line-height: 22px;
+    }
+    .content__time {
+      margin: 20px 0;
+    }
+  }
+}
+
+.client__reviews--slider{
+    .owl-stage{
+        margin-bottom:20px;
+    }
+}
+.client__reviews--item {
+  background: #fff;
+  color: #666;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  padding: 25px;
+  .reviews__item {
+    &--heading {
+      font-size: 14px;
+      font-weight: 700;
+    }
+    &--content {
+      line-height: 25px;
+      text-align: justify;
+      min-height: 125px !important;
+      padding-top: 15px;
+      color: variable.$blackColor;
+    }
+    &--user {
+      margin-top: 15px;
+      img {
+        border-radius: 50%;
+      }
+      .item__user--info {
+        margin-left: 15px;
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.our__team--slider {
+  .team__slider--item {
+    padding: 25px;
+    text-align: center;
+    img {
+      border-radius: 50%;
+    }
+    .slider__item--info {
+      margin-top: 15px;
+    }
+    .our__team--name {
+      font-weight: 700;
+    }
+    .our__team--position {
+      font-weight: 700;
+    }
+    .slider__item--say {
+      text-align: justify;
+      margin-top: 5px;
+    }
+  }
+}
+
+.last__comment--slider {
+  .comment__slider--item {
+    .slider__item {
+      &--info {
+        display: flex;
+        align-items: center;
+        img {
+          border-radius: 50%;
+        }
+        a {
+          font-weight: 700;
+        }
+        .slider__item--user {
+          margin-left: 20px;
+        }
+      }
+      &--content {
+        margin-top: 15px;
+        line-height: 25px;
+        text-align: justify;
+        min-height: 125px;
+      }
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-dots {
+    text-align: center;
+    margin: 20px 0;
+    .owl-dot {
+      padding-left: 12px !important;
+    }
+    button.active {
+      span {
+        background-color: variable.$secondaryColor;
+        width:45px;
+        height:8px;
+        border-radius: 8px;
+        border-color: transparent;
+      }
+    }
+    span {
+      display: block;
+      width: 20px;
+      height: 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(102, 102, 102, 0.4);
+      transition: all .2s ease;
+      transition-property: background-color, border-color, width;
+    }
+  }
+}

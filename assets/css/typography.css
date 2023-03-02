@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: var(--open-sans-font);
+  font-size: 14px;
+  color: var(--black-color);
+  font-weight: 400;
+}
+
+a {
+  font-size: 16px;
+  font-family: var(--open-sans-font);
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+p {
+  line-height: 2;
+  font-weight: 500;
+}
+
+table th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--open-sans-font);
+  font-weight: 700;
+  color: #1b1825;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}/*# sourceMappingURL=typography.css.map */

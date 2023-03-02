@@ -1,0 +1,462 @@
+@use "../helpers/variable";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+.destination.detail__destination {
+  .destination__detail--left{
+    h3{
+      margin-bottom:20px;
+    }
+    .destination__slider--wrapper {
+      margin-bottom: 30px;
+      .destination__slider {
+        margin-top: 15px;
+        position: relative;
+        .owl-nav {
+          button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            i {
+              font-size: 30px;
+              transition: color 0.3s;
+              &:hover {
+                color: variable.$primaryColor;
+              }
+            }
+            &.owl-prev {
+              margin-left: 20px;
+            }
+            &.owl-next {
+              position: absolute;
+              right: 0;
+              margin-right: 20px;
+            }
+          }
+        }
+        img {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  
+    .box__tab--wrapper {
+      position: relative;
+      .box__tab {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        &--view {
+          display: flex;
+          li.active > a {
+            background: variable.$primaryColor;
+            color: variable.$whiteColor;
+          }
+          a {
+            color: variable.$blackColor;
+            background: #e8e8e8;
+            padding: 10px 30px;
+            margin-right: 4px;
+            font-weight: 700;
+            display: inline-block;
+            &:hover {
+              background: variable.$primaryColor;
+              color: variable.$whiteColor;
+            }
+          }
+        }
+        & > div > a {
+          background: variable.$secondaryColor;
+          color: variable.$whiteColor;
+          padding: 11px 30px;
+          font-weight: 700;
+        }
+        &.is__sticky {
+          position: fixed;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+
+  .destination__detail--right {
+    .box__item {
+      border: 1px solid #e3e3e3;
+      background: variable.$whiteColor;
+    }
+    * + .box__item {
+      margin-top: 20px;
+    }
+    .box__title {
+      padding: 8px 0;
+      color: variable.$whiteColor;
+      background: variable.$primaryColor;
+      p {
+        font-size: 12px;
+      }
+      &.has__border {
+        padding: 0;
+        background: transparent;
+        h4 {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border-bottom: 2px solid variable.$primaryColor;
+        }
+      }
+    }
+    .box__content {
+      padding: 20px 14px;
+      padding-bottom: 10px;
+      background: variable.$whiteColor;
+      form {
+        .date-of-birth-children {
+          margin-top: 10px;
+          &:first-child {
+            margin-top: 0;
+          }
+          & > div {
+            display: flex;
+            select {
+              flex: 1;
+              margin-right: 10px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        margin-bottom: 10px;
+        button {
+          margin-bottom: 10px;
+        }
+      }
+      &--price {
+        margin-top: 20px;
+        ul {
+          margin: 15px 0;
+          li {
+            border-top: 1px solid #e5e5e5;
+            padding-top: 10px;
+            span {
+              font-weight: 700;
+              color: variable.$secondaryColor;
+              float: right;
+            }
+          }
+        }
+      }
+      ul.box__list--info {
+        li {
+          span {
+            display: block;
+            color: variable.$primaryColor;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-size: 16px;
+          }
+        }
+      }
+      &.has__border {
+        padding: 20px;
+        * + li {
+          margin-top: 10px;
+          padding-top: 10px;
+          border-top: 1px solid #e5e5e5;
+        }
+      }
+    }
+  }
+
+  // Box Detail CSS
+  .box__detail {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    background: variable.$whiteColor;
+    margin-bottom: 20px;
+    h4 {
+      margin-bottom: 10px;
+    }
+    .icon__heading {
+      padding-left: 25px;
+      position: relative;
+      &::before {
+        position: absolute;
+        left: 0;
+        font-family: "Font Awesome 5 Pro";
+        color: #989898;
+      }
+      &.success::before {
+        content: "\f058";
+      }
+      &.error::before {
+        content: "\f057";
+      }
+    }
+    .info__detail--list {
+      * + li {
+        margin-top: 10px;
+      }
+    }
+    .highlight {
+      margin-top: 40px;
+      .introduction {
+        margin-top: 8px;
+        p {
+          text-align: justify;
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            padding-left: 18px;
+            position: relative;
+            &::before {
+              content: "\f00c";
+              font-family: "Font Awesome 5 Pro";
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 0;
+              color: variable.$primaryColor;
+              font-size: 14px;
+            }
+          }
+          * + li {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    & {
+      .box__detail--content {
+        li > a {
+          padding: 5px 0;
+          display: block;
+          position: relative;
+          span.date__destination {
+            float: right;
+            color: variable.$secondaryGrayColor;
+          }
+        }
+      }
+      .accordion__content {
+        .title__content {
+          padding: 15px 0;
+          padding-left: 25px;
+          font-size: 15px;
+          position: relative;
+          &::before {
+            content: "\f594";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 100;
+            position: absolute;
+            left: 0;
+          }
+          * + p {
+            margin-top: 5px;
+          }
+        }
+        & > div {
+          padding-top: 10px;
+        }
+        .content__info {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          li {
+            display: flex;
+            padding-left: 28px;
+            position: relative;
+            span:first-child {
+              margin-right: 5px;
+            }
+            &::before {
+              font-family: "Font Awesome 5 Pro";
+              font-weight: 300;
+              position: absolute;
+              left: 0;
+            }
+            &.hotel::before {
+              content: "\f236";
+            }
+            &.location::before {
+              content: "\f3c5";
+            }
+            &.website::before {
+              content: "\f0ac";
+            }
+          }
+          * + li {
+            padding-top: 6px;
+          }
+        }
+      }
+    }
+    &.has__accordion {
+      h4 {
+        margin-bottom: 0;
+      }
+      .box__detail--accordion {
+        margin-top: 20px;
+        & > li {
+          &:hover {
+            span:first-child {
+              color: variable.$primaryColor;
+            }
+          }
+          & > a {
+            border-top: 1px solid #eaeaeb;
+            padding: 5px 0;
+            display: block;
+            position: relative;
+            margin-bottom: 0;
+            &::before {
+              content: "\f067";
+              font-family: "Font Awesome 5 Pro";
+              font-weight: 100;
+              width: 1.2em;
+              height: 1.2em;
+              margin-left: 10px;
+              float: right;
+            }
+            span.location {
+              margin-left: 3px;
+              font-size: 15px;
+            }
+            span.distance {
+              margin-left: 14px;
+              padding-left: 26px;
+              position: relative;
+              color: #737373;
+              &::after {
+                content: "\f279";
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            span.date__destination {
+              float: right;
+              color: variable.$secondaryGrayColor;
+            }
+          }
+          .accordion__content {
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s height ease-out;
+            .content__info {
+              padding-top: 20px;
+              padding-bottom: 0;
+            }
+          }
+        }
+        & > li.active {
+          & > a {
+            &::before {
+              content: "\f068";
+            }
+          }
+          .accordion__content {
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  // Box Detail CSS
+  .review__detail {
+    background: #fff;
+    padding: 24px;
+    line-height: 24px;
+    border: 1px solid #e3e3e3;
+    margin: 20px 0;
+    ul {
+      margin-top: 20px;
+    }
+    * + li {
+      margin-top: 20px;
+    }
+    .review__list {
+      img {
+        border-radius: 50%;
+        margin-bottom: 5px;
+      }
+      h5 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// Modal Write Review
+@include media-breakpoint-down(lg) {
+  .info__detail {
+    margin-top: 20px;
+  }
+
+  .destination.detail__destination {
+    .box__detail {
+      .highlight {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .destination.detail__destination {
+    .box__tab--wrapper {
+      .box__tab--view {
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .inclusions__item:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1060px,
+  xl: 1260px,
+  xxl: 1320px,
+);
+
+@function get-breakpoints($key: "xl") {
+  @return map-get($container-max-widths, $key);
+}
+#writeReview,
+.large-form {
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  .modal-dialog {
+    padding: 0 30px;
+    max-width: get-breakpoints("xl");
+  }
+  .modal-body {
+    * + div {
+      margin-bottom: 10px;
+    }
+  }
+
+  .modal-content {
+    border-radius: unset;
+  }
+}
+
+.related__tours {
+  .destination__item {
+    border: 1px solid #e3e3e3;
+  }
+}

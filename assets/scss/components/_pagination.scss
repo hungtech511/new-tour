@@ -1,0 +1,35 @@
+@use '../helpers/variable';
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+.page__pagination{
+    margin-top:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & > *{
+        padding: 4px;
+    margin-left: 8px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    position: relative;
+    }
+    & > .page__active{
+        color: #fff!important;
+    background: variable.$primaryColor;
+    border: none;
+    a{
+        color:#fff;
+    }
+    }
+    a{
+        padding:5px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .page__pagination{
+        margin-top:30px;
+    }
+}

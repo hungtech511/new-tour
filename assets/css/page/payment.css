@@ -1,0 +1,45 @@
+.payment__page .payment__left {
+  padding: 25px;
+  background: #fff;
+}
+.payment__page .payment__left form * + button {
+  margin-left: 20px;
+}
+.payment__page .payment__left form h4 {
+  margin: 30px 0;
+}
+.payment__page .payment__right .box__payment {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+}
+.payment__page .payment__right .box__title {
+  display: flex;
+  padding: 19px 24px 19px 24px;
+  background: #f60001;
+  color: #fff;
+}
+.payment__page .payment__right .box__title i {
+  margin-left: auto;
+}
+.payment__page .payment__right .box__content {
+  padding: 20px 24px;
+}
+.payment__page .payment__right .box__content ul.box__has--list li span {
+  float: right;
+}
+.payment__page .payment__right .box__content ul.box__has--list * + li {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.payment__page .payment__right .box__content .price__tax {
+  margin: 20px 0;
+}
+.payment__page .payment__right .box__content ul.box__price li span {
+  float: right;
+}
+.payment__page .payment__right .box__content ul.box__price * + li {
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=payment.css.map */

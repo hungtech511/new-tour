@@ -1,0 +1,40 @@
+/*******************************
+        TABLE OF CONTENT
+********************************
+    + Import Library
+    + Reset CSS
+    + Typography
+    + Common Element
+    + Layout
+        - Header
+    + Page
+        - Home
+/* ================ Import Library ============== */
+@use "library/boostrap";
+@use "library/popup";
+
+/* ================ Reset CSS ============== */
+@use "base/reset";
+
+/* ================ Typography ============== */
+@use "base/typography";
+
+/* ================ Common Element ============== */
+@use "base/common";
+
+/* ================ Layout ============== */
+@use "layout/header";
+@use "layout/about";
+@use "layout/footer";
+
+/* ================ Page ============== */
+@use "page/home";
+@use "page/list-tour";
+@use "page/contact-us";
+@use "page/about-us";
+@use "page/blog";
+@use "page/plan-your-trip";
+@use "page/blog-detail";
+@use "page/detail-tour";
+@use "page/payment";
+

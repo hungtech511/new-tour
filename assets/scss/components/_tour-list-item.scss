@@ -1,0 +1,33 @@
+@use '../helpers/variable';
+.destination__item{
+    img{
+        width: 100%;
+    }
+    &--content{
+        background: variable.$whiteColor;
+        h3{
+            font-size: 14px;
+            padding:10px 14px;
+            padding-bottom:0;
+            margin-bottom:10px;
+        }
+        .item__list{
+            li + li{
+                margin-top:10px;
+            }
+            li{
+                display: flex;
+                padding:0 14px;
+            }
+        }
+    }
+    .item__price{
+        background: variable.$whiteColor;
+        padding: 14px !important;
+        border-top:1px solid #e3e3e3;
+
+        span:first-child{
+            margin-right:14px;
+        }
+    }
+}

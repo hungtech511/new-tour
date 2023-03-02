@@ -1,0 +1,144 @@
+@use "../helpers/variable";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.list-news {
+  &__item {
+    background-color: variable.$whiteColor;
+    .list-news__img {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      @include media-breakpoint-up(lg) {
+        & {
+          width: 100%;
+        }
+      }
+      &::after {
+        position: absolute;
+        content: " ";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url("https://izitour.com/themes/web/img/icon/hover-effect.png")
+          center no-repeat rgba(1, 183, 242, 0.6);
+        transition: 0.4s ease-in;
+        transform: rotateY(180deg) scale(0.5, 0.5);
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:hover {
+        img {
+          transform: scale(1.3);
+          transition: 0.4s ease-in;
+        }
+        &::after {
+          visibility: visible;
+          transform: rotateY(0) scale(1.1);
+          opacity: 1;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .list-news__content {
+      background-color: variable.$whiteColor;
+      padding: 10px;
+      margin-bottom: 30px;
+      flex: 1;
+      a{
+        display: block;
+        margin-bottom:10px;
+      }
+    }
+  }
+}
+
+.boxright-item {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+
+  &__heading {
+    font-size: 18px;
+    padding: 15px 0;
+    margin: 0;
+    color: variable.$primaryColor;
+    text-align: center;
+    background-color: variable.$whiteColor;
+    border-bottom: 2px solid variable.$primaryColor;
+  }
+  .accordion {
+    padding: 0 16px;
+    background-color: variable.$whiteColor;
+    &-item {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      z-index: 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      .accordion-header {
+        &:hover {
+          button {
+            color: variable.$primaryColor;
+          }
+        }
+        button {
+          padding: 16px 0;
+        }
+        .accordion-button {
+          background: #fff;
+          color: variable.$blackColor;
+          &::after {
+            content: none;
+          }
+          &.collapsed {
+            & > div {
+              .plus-icon {
+                opacity: 1;
+                display: block;
+              }
+              .minus-icon {
+                opacity: 0;
+                display: none;
+              }
+            }
+          }
+          & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .minus-icon {
+              opacity: 1;
+              display: block;
+            }
+            .plus-icon {
+              opacity: 0;
+              display: none;
+            }
+          }
+        }
+      }
+      .accordion-body {
+        padding: 0 0 16px 0;
+        ul {
+          margin-left: 20px;
+          li {
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

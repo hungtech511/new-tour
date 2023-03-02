@@ -1,0 +1,125 @@
+.list-news__item {
+  background-color: #fff;
+}
+.list-news__item .list-news__img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .list-news__item .list-news__img {
+    width: 100%;
+  }
+}
+.list-news__item .list-news__img::after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://izitour.com/themes/web/img/icon/hover-effect.png") center no-repeat rgba(1, 183, 242, 0.6);
+  transition: 0.4s ease-in;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+.list-news__item .list-news__img:hover img {
+  transform: scale(1.3);
+  transition: 0.4s ease-in;
+}
+.list-news__item .list-news__img:hover::after {
+  visibility: visible;
+  transform: rotateY(0) scale(1.1);
+  opacity: 1;
+}
+.list-news__item .list-news__img img {
+  width: 100%;
+}
+.list-news__item .list-news__content {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+  flex: 1;
+}
+.list-news__item .list-news__content a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.boxright-item {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.boxright-item__heading {
+  font-size: 18px;
+  padding: 15px 0;
+  margin: 0;
+  color: #f60001;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 2px solid #f60001;
+}
+.boxright-item .accordion {
+  padding: 0 16px;
+  background-color: #fff;
+}
+.boxright-item .accordion-item {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 0;
+}
+.boxright-item .accordion-item:last-child {
+  border-bottom: none;
+}
+.boxright-item .accordion-item .accordion-header:hover button {
+  color: #f60001;
+}
+.boxright-item .accordion-item .accordion-header button {
+  padding: 16px 0;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button {
+  background: #fff;
+  color: #333;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button::after {
+  content: none;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button.collapsed > div .plus-icon {
+  opacity: 1;
+  display: block;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button.collapsed > div .minus-icon {
+  opacity: 0;
+  display: none;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button > div .minus-icon {
+  opacity: 1;
+  display: block;
+}
+.boxright-item .accordion-item .accordion-header .accordion-button > div .plus-icon {
+  opacity: 0;
+  display: none;
+}
+.boxright-item .accordion-item .accordion-body {
+  padding: 0 0 16px 0;
+}
+.boxright-item .accordion-item .accordion-body ul {
+  margin-left: 20px;
+}
+.boxright-item .accordion-item .accordion-body ul li {
+  margin-bottom: 10px;
+}
+.boxright-item .accordion-item .accordion-body ul li:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=plan-your-trip.css.map */

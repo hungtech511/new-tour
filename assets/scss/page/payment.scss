@@ -1,0 +1,58 @@
+@use '../helpers/variable';
+.payment__page{
+    .payment__left{
+        padding:25px;
+        background: variable.$whiteColor;
+        form{
+            * + button{
+                margin-left:20px;
+            }
+            h4{
+                margin:30px 0;
+            }
+        }
+    }
+    .payment__right{
+        .box__payment{
+            border:1px solid #e5e5e5;
+            background:variable.$whiteColor;
+        }
+        .box__title{
+        display: flex;
+        padding: 19px 24px 19px 24px;
+        background:variable.$primaryColor;
+        color:variable.$whiteColor;
+        i{
+            margin-left:auto;
+        }
+        }
+        .box__content{
+            padding:20px 24px;
+            ul.box__has--list{
+                li{
+                    span{
+                        float:right;
+                    }
+                }
+                * + li{
+                    margin-top:10px;
+                    padding-top:10px;
+                    border-top:1px solid #e5e5e5;
+                }
+            }
+            .price__tax{
+                margin:20px 0;
+            }
+            ul.box__price{
+                li{
+                    span{
+                        float:right;
+                    }
+                }
+                * + li {
+                    margin-top:8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.contact-us .breadcrumb__sort {
+  padding-top: 16px;
+}
+.contact-us .contact-us-container {
+  background-color: #fff;
+  padding: 30px 30px 70px 24px;
+}
+.contact-us .contact-us-container form .form-group input {
+  width: 75%;
+}
+.contact-us .contact-us-container form .form-group textarea {
+  padding: 14px;
+  width: 75%;
+}
+.contact-us .contact-us-container form .form-group input[name=verify-code] {
+  width: 30%;
+}
+.contact-us .contact-us-container form button {
+  display: flex;
+  margin: 0 auto;
+}
+.contact-us .contact-us-container form button:hover {
+  background-color: #f60001;
+}
+.contact-us .contact-list-container {
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .contact-us .contact-list-container {
+    margin-top: 0;
+  }
+}
+.contact-us .contact-list-container .contact-list li {
+  margin-bottom: 14px;
+}
+.contact-us .contact-list-container .contact-list li i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.contact-us .contact-list-container .contact-list li a {
+  color: #333;
+}
+.contact-us .contact-list-container .contact-list li a:hover {
+  color: #f60001;
+}
+.contact-us .contact-list-container .office-hours p {
+  line-height: 2.5;
+}
+.contact-us .contact-list-container .google-map {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=contact-us.css.map */

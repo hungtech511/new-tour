@@ -1,0 +1,82 @@
+@use "../helpers/variable";
+
+$make-icon-center: 36px;
+.footer {
+  background: #272727;
+  padding-top: 55px;
+  color: variable.$whiteColor;
+  line-height: 24px;
+  h5 {
+    border-bottom: 1px solid #484848;
+    height: 65px !important;
+    color: variable.$whiteColor;
+  }
+  &__list {
+    margin-top: 20px;
+    * + li {
+      margin-top: 10px;
+    }
+    &.row {
+      li:nth-child(2) {
+        margin-top: 0px;
+      }
+      a {
+        color: variable.$whiteColor;
+      }
+    }
+    form {
+      display: flex;
+      input {
+        display: inline-block;
+        width: 200px;
+      }
+      button {
+        background: variable.$primaryColor;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+    }
+    .social__media {
+      li {
+        a {
+          color: #666;
+          font-size: 14px;
+          width: $make-icon-center;
+          height: $make-icon-center;
+          line-height: $make-icon-center;
+          background: variable.$whiteColor;
+        }
+      }
+    }
+    svg {
+      path {
+        fill: variable.$whiteColor;
+      }
+    }
+    h4 {
+    }
+    .footer__destinations {
+      display: flex;
+      flex-wrap: wrap;
+      a {
+        display: block;
+        margin-right: 8px;
+        margin-top: 8px;
+        padding: 12px;
+        line-height: 100%;
+        background-color: #3d3d3d;
+        border-radius: 26px;
+        color: variable.$whiteColor;
+      }
+      a:hover {
+        color: unset;
+      }
+    }
+  }
+  .copyright {
+    background: #4c4c4c;
+    padding: 18px 0;
+    color: #a7a7a7;
+    margin-top: 20px;
+  }
+}

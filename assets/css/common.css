@@ -1,0 +1,11 @@
+.primary-text-color {
+  color: var(--green-color);
+}
+
+.dark-text-color {
+  color: var(--black-color);
+}
+
+.hover-to-primary-text:hover {
+  color: var(--secondary--green-color);
+}/*# sourceMappingURL=common.css.map */

@@ -1,0 +1,30 @@
+@use "../components/tour-list-item";
+@use "../components/pagination";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+.destination {
+  .breadcrumb__sort {
+    padding-top: 16px;
+  }
+
+  .search__form {
+    margin-bottom: 26px;
+    padding: 10px 0 10px 10px;
+
+  }
+
+}
+@include media-breakpoint-up(md){
+    .search__form {
+        .col-lg-2{
+            width: 20%;
+        }
+      }
+}
+@include media-breakpoint-down(lg) {
+    .search__form {
+        border: 1px solid #e3e3e3;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,61 @@
+@use "../helpers/variable";
+.button,
+button:disabled,
+button[disabled]{
+  margin: 0;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 0.875em;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
+button:disabled,
+button[disabled]{
+  background: #ddd;
+  color: #fff!important;
+  cursor:not-allowed;
+}
+
+button:disabled:hover,
+button[disabled]:hover{
+  background: #ddd;
+  color: #fff!important;
+  cursor:not-allowed;
+}
+
+.orange-button {
+  background: variable.$secondaryColor;
+  color: variable.$whiteColor;
+}
+
+.primary-button {
+  background: variable.$primaryColor;
+  color: variable.$whiteColor;
+}
+
+
+.read-more {
+  font-size: 14px;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  position: relative;
+  i {
+    margin-left: 5px;
+  }
+  &:hover{
+    color:variable.$secondaryColor;
+  }
+}
+
+.padding-15{
+  padding:0 15px;
+}

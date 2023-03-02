@@ -1,0 +1,392 @@
+.destination.detail__destination .destination__detail--left h3 {
+  margin-bottom: 20px;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper {
+  margin-bottom: 30px;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider {
+  margin-top: 15px;
+  position: relative;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button i {
+  font-size: 30px;
+  transition: color 0.3s;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button i:hover {
+  color: #f60001;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button.owl-prev {
+  margin-left: 20px;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider img {
+  position: relative;
+  z-index: 2;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper {
+  position: relative;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view {
+  display: flex;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view li.active > a {
+  background: #f60001;
+  color: #fff;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view a {
+  color: #333;
+  background: #e8e8e8;
+  padding: 10px 30px;
+  margin-right: 4px;
+  font-weight: 700;
+  display: inline-block;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view a:hover {
+  background: #f60001;
+  color: #fff;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab > div > a {
+  background: #e9b754;
+  color: #fff;
+  padding: 11px 30px;
+  font-weight: 700;
+}
+.destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab.is__sticky {
+  position: fixed;
+  width: 100%;
+}
+.destination.detail__destination .destination__detail--right .box__item {
+  border: 1px solid #e3e3e3;
+  background: #fff;
+}
+.destination.detail__destination .destination__detail--right * + .box__item {
+  margin-top: 20px;
+}
+.destination.detail__destination .destination__detail--right .box__title {
+  padding: 8px 0;
+  color: #fff;
+  background: #f60001;
+}
+.destination.detail__destination .destination__detail--right .box__title p {
+  font-size: 12px;
+}
+.destination.detail__destination .destination__detail--right .box__title.has__border {
+  padding: 0;
+  background: transparent;
+}
+.destination.detail__destination .destination__detail--right .box__title.has__border h4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f60001;
+}
+.destination.detail__destination .destination__detail--right .box__content {
+  padding: 20px 14px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+.destination.detail__destination .destination__detail--right .box__content form {
+  margin-bottom: 10px;
+}
+.destination.detail__destination .destination__detail--right .box__content form .date-of-birth-children {
+  margin-top: 10px;
+}
+.destination.detail__destination .destination__detail--right .box__content form .date-of-birth-children:first-child {
+  margin-top: 0;
+}
+.destination.detail__destination .destination__detail--right .box__content form .date-of-birth-children > div {
+  display: flex;
+}
+.destination.detail__destination .destination__detail--right .box__content form .date-of-birth-children > div select {
+  flex: 1;
+  margin-right: 10px;
+}
+.destination.detail__destination .destination__detail--right .box__content form .date-of-birth-children > div select:last-child {
+  margin-right: 0;
+}
+.destination.detail__destination .destination__detail--right .box__content form button {
+  margin-bottom: 10px;
+}
+.destination.detail__destination .destination__detail--right .box__content--price {
+  margin-top: 20px;
+}
+.destination.detail__destination .destination__detail--right .box__content--price ul {
+  margin: 15px 0;
+}
+.destination.detail__destination .destination__detail--right .box__content--price ul li {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+.destination.detail__destination .destination__detail--right .box__content--price ul li span {
+  font-weight: 700;
+  color: #e9b754;
+  float: right;
+}
+.destination.detail__destination .destination__detail--right .box__content ul.box__list--info li span {
+  display: block;
+  color: #f60001;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+.destination.detail__destination .destination__detail--right .box__content.has__border {
+  padding: 20px;
+}
+.destination.detail__destination .destination__detail--right .box__content.has__border * + li {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+.destination.detail__destination .box__detail {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.destination.detail__destination .box__detail h4 {
+  margin-bottom: 10px;
+}
+.destination.detail__destination .box__detail .icon__heading {
+  padding-left: 25px;
+  position: relative;
+}
+.destination.detail__destination .box__detail .icon__heading::before {
+  position: absolute;
+  left: 0;
+  font-family: "Font Awesome 5 Pro";
+  color: #989898;
+}
+.destination.detail__destination .box__detail .icon__heading.success::before {
+  content: "\f058";
+}
+.destination.detail__destination .box__detail .icon__heading.error::before {
+  content: "\f057";
+}
+.destination.detail__destination .box__detail .info__detail--list * + li {
+  margin-top: 10px;
+}
+.destination.detail__destination .box__detail .highlight {
+  margin-top: 40px;
+}
+.destination.detail__destination .box__detail .highlight .introduction {
+  margin-top: 8px;
+}
+.destination.detail__destination .box__detail .highlight .introduction p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.destination.detail__destination .box__detail .highlight .introduction ul li {
+  padding-left: 18px;
+  position: relative;
+}
+.destination.detail__destination .box__detail .highlight .introduction ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: #f60001;
+  font-size: 14px;
+}
+.destination.detail__destination .box__detail .highlight .introduction ul * + li {
+  margin-top: 5px;
+}
+.destination.detail__destination .box__detail .box__detail--content li > a {
+  padding: 5px 0;
+  display: block;
+  position: relative;
+}
+.destination.detail__destination .box__detail .box__detail--content li > a span.date__destination {
+  float: right;
+  color: #999;
+}
+.destination.detail__destination .box__detail .accordion__content .title__content {
+  padding: 15px 0;
+  padding-left: 25px;
+  font-size: 15px;
+  position: relative;
+}
+.destination.detail__destination .box__detail .accordion__content .title__content::before {
+  content: "\f594";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 100;
+  position: absolute;
+  left: 0;
+}
+.destination.detail__destination .box__detail .accordion__content .title__content * + p {
+  margin-top: 5px;
+}
+.destination.detail__destination .box__detail .accordion__content > div {
+  padding-top: 10px;
+}
+.destination.detail__destination .box__detail .accordion__content .content__info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li {
+  display: flex;
+  padding-left: 28px;
+  position: relative;
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li span:first-child {
+  margin-right: 5px;
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li::before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li.hotel::before {
+  content: "\f236";
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li.location::before {
+  content: "\f3c5";
+}
+.destination.detail__destination .box__detail .accordion__content .content__info li.website::before {
+  content: "\f0ac";
+}
+.destination.detail__destination .box__detail .accordion__content .content__info * + li {
+  padding-top: 6px;
+}
+.destination.detail__destination .box__detail.has__accordion h4 {
+  margin-bottom: 0;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion {
+  margin-top: 20px;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li:hover span:first-child {
+  color: #f60001;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a {
+  border-top: 1px solid #eaeaeb;
+  padding: 5px 0;
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a::before {
+  content: "\f067";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 100;
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 10px;
+  float: right;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.location {
+  margin-left: 3px;
+  font-size: 15px;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.distance {
+  margin-left: 14px;
+  padding-left: 26px;
+  position: relative;
+  color: #737373;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.distance::after {
+  content: "\f279";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.date__destination {
+  float: right;
+  color: #999;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li .accordion__content {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s height ease-out;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li .accordion__content .content__info {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li.active > a::before {
+  content: "\f068";
+}
+.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li.active .accordion__content {
+  padding-bottom: 10px;
+}
+.destination.detail__destination .review__detail {
+  background: #fff;
+  padding: 24px;
+  line-height: 24px;
+  border: 1px solid #e3e3e3;
+  margin: 20px 0;
+}
+.destination.detail__destination .review__detail ul {
+  margin-top: 20px;
+}
+.destination.detail__destination .review__detail * + li {
+  margin-top: 20px;
+}
+.destination.detail__destination .review__detail .review__list img {
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.destination.detail__destination .review__detail .review__list h5 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .info__detail {
+    margin-top: 20px;
+  }
+  .destination.detail__destination .box__detail .highlight {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .destination.detail__destination .box__tab--wrapper .box__tab--view a {
+    padding: 10px;
+  }
+}
+@media (max-width: 575.98px) {
+  .inclusions__item:last-of-type {
+    margin-top: 20px;
+  }
+}
+#writeReview,
+.large-form {
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#writeReview .modal-dialog,
+.large-form .modal-dialog {
+  padding: 0 30px;
+  max-width: 1260px;
+}
+#writeReview .modal-body * + div,
+.large-form .modal-body * + div {
+  margin-bottom: 10px;
+}
+#writeReview .modal-content,
+.large-form .modal-content {
+  border-radius: unset;
+}
+
+.related__tours .destination__item {
+  border: 1px solid #e3e3e3;
+}
+
+/*# sourceMappingURL=detail-tour.css.map */
