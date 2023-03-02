@@ -385,8 +385,8 @@ button[disabled]:hover {
 }
 .top__10--destination .owl-nav {
   position: absolute;
-  top: -25%;
-  right: 15%;
+  top: -15%;
+  right: 4px;
   transform: translateY(-50%);
 }
 .top__10--destination .owl-nav button {
