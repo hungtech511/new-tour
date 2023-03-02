@@ -1,3 +1,4 @@
+
 /* Error: Can't find stylesheet to import.
  *   ,
  * 6 | @import "../../node_modules/bootstrap/scss/functions";
@@ -9,6 +10,236 @@ body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
       "Droid Sans Mono", monospace, monospace;
   white-space: pre;
+=======
+.button,
+button:disabled,
+button[disabled] {
+  margin: 0;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 0.875em;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  transition-property: color, background-color, border-color;
+}
+
+button:disabled,
+button[disabled] {
+  background: #ddd;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+
+button:disabled:hover,
+button[disabled]:hover {
+  background: #ddd;
+  color: #fff !important;
+  cursor: not-allowed;
+}
+
+.orange-button {
+  background: #e9b754;
+  color: #fff;
+}
+
+.primary-button {
+  background: #f60001;
+  color: #fff;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 700;
+  color: #999;
+  text-transform: uppercase;
+  position: relative;
+}
+.read-more i {
+  margin-left: 5px;
+}
+.read-more:hover {
+  color: #e9b754;
+}
+
+.padding-15 {
+  padding: 0 15px;
+}
+
+.tour__card {
+  position: relative;
+  overflow: hidden;
+}
+.tour__card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #333;
+  z-index: 1;
+}
+.tour__card a {
+  display: block;
+  height: 100%;
+}
+.tour__card img {
+  width: 100%;
+}
+.tour__card .card__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  transform: translateY(100%);
+  transition: all 0.3s ease-in;
+}
+.tour__card .card__content p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.tour__card .content {
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: justify;
+}
+.tour__card:hover .overlay {
+  opacity: 0.5;
+}
+.tour__card:hover img {
+  transform: scale(1.1);
+}
+.tour__card:hover .card__content {
+  transform: translateY(50%);
+  transition: all 0.3s ease-out;
+}
+
+.blog__slider--item .slider__item--content {
+  margin-top: 10px;
+}
+.blog__slider--item .slider__item--content h4 {
+  min-height: 70px;
+  line-height: 22px;
+}
+.blog__slider--item .slider__item--content p:not(.content__time) {
+  margin-top: 10px;
+  line-height: 30px;
+}
+.blog__slider--item .slider__item--content .content__time {
+  margin: 20px 0;
+  position: relative;
+  padding-left: 20px;
+}
+.blog__slider--item .slider__item--content .content__time::before {
+  content: "\f133";
+  position: absolute;
+  left: 0;
+  font-family: "Font Awesome 5 Pro";
+}
+
+.client__reviews--slider .owl-stage {
+  margin-bottom: 20px;
+}
+
+.client__reviews--item {
+  background: #fff;
+  color: #666;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+}
+.client__reviews--item .reviews__item--heading {
+  font-size: 14px;
+  font-weight: 700;
+}
+.client__reviews--item .reviews__item--content {
+  line-height: 25px;
+  text-align: justify;
+  min-height: 125px !important;
+  padding-top: 15px;
+  color: #333;
+}
+.client__reviews--item .reviews__item--user {
+  margin-top: 15px;
+}
+.client__reviews--item .reviews__item--user img {
+  border-radius: 50%;
+}
+.client__reviews--item .reviews__item--user .item__user--info {
+  margin-left: 15px;
+}
+.client__reviews--item .reviews__item--user .item__user--info a {
+  font-weight: 700;
+}
+
+.our__team--slider .team__slider--item {
+  padding: 25px;
+  text-align: center;
+}
+.our__team--slider .team__slider--item img {
+  border-radius: 50%;
+}
+.our__team--slider .team__slider--item .slider__item--info {
+  margin-top: 15px;
+}
+.our__team--slider .team__slider--item .our__team--name {
+  font-weight: 700;
+}
+.our__team--slider .team__slider--item .our__team--position {
+  font-weight: 700;
+}
+.our__team--slider .team__slider--item .slider__item--say {
+  text-align: justify;
+  margin-top: 5px;
+}
+
+.last__comment--slider .comment__slider--item .slider__item--info {
+  display: flex;
+  align-items: center;
+}
+.last__comment--slider .comment__slider--item .slider__item--info img {
+  border-radius: 50%;
+}
+.last__comment--slider .comment__slider--item .slider__item--info a {
+  font-weight: 700;
+}
+.last__comment--slider .comment__slider--item .slider__item--info .slider__item--user {
+  margin-left: 20px;
+}
+.last__comment--slider .comment__slider--item .slider__item--content {
+  margin-top: 15px;
+  line-height: 25px;
+  text-align: justify;
+  min-height: 125px;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin: 20px 0;
+}
+.owl-carousel .owl-dots .owl-dot {
+  padding-left: 12px !important;
+}
+.owl-carousel .owl-dots button.active span {
+  background-color: #e9b754;
+  width: 45px;
+  height: 8px;
+  border-radius: 8px;
+  border-color: transparent;
+}
+.owl-carousel .owl-dots span {
   display: block;
   padding: 1em;
   margin-bottom: 1em;
