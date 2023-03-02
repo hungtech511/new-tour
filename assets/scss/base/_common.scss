@@ -228,11 +228,12 @@
     }
     &:hover{
       background: variable.$whiteColor;
-      box-shadow: 0 0 0 0 rgb(246 0 1 / 30%);
+      box-shadow: 0 0 0 0 rgb(255 255 255 / 30%);
       &:after{
         color:variable.$primaryColor;
       }
     }
+}
 
 .heading__section {
 	margin-bottom: 30px;
