@@ -64,7 +64,6 @@
 
 .our__team--slider {
   .team__slider--item {
-    padding: 25px;
     text-align: center;
     .team__slider--content {
       position: absolute;
@@ -79,8 +78,9 @@
       bottom:0%;
     }
     .slider__item--info {
-      width: 90%;
+      width: 100%;
       transform: rotateY(0deg);
+      box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 8%);
       .our__team--name {
         font-weight: 700;
       }
@@ -89,12 +89,15 @@
       }
     }
     .slider__item--say {
+      padding:10px 20px;
       transform: rotateY(-180deg);
     }
     .slider__item--info,
     .slider__item--say{
+      display: inline-block;
       position: absolute;
       bottom:0;
+      left:0;
       transform-style: preserve-3d;
       backface-visibility: hidden;
       background:variable.$whiteColor;
@@ -102,14 +105,14 @@
     }
     &:hover {
       .team__slider--content{
-        transform: translate(-50%, -135%);
+        transform: translate(-50%, -50%);
         bottom: 50%;
       }
       .slider__item--info {
         transform: rotateY(180deg);
       }
       .slider__item--say {
-        transform: rotateY(0deg);
+        transform: rotateY(0deg) translateY(50%);
       }
     }
   }
