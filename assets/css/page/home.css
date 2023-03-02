@@ -159,7 +159,6 @@ button[disabled]:hover {
 }
 
 .our__team--slider .team__slider--item {
-  padding: 25px;
   text-align: center;
 }
 .our__team--slider .team__slider--item .team__slider--content {
@@ -177,6 +176,7 @@ button[disabled]:hover {
 .our__team--slider .team__slider--item .slider__item--info {
   width: 100%;
   transform: rotateY(0deg);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
 }
 .our__team--slider .team__slider--item .slider__item--info .our__team--name {
   font-weight: 700;
