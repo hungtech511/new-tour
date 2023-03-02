@@ -139,6 +139,19 @@
   padding:50px 0;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: .5s ease;
+  background-color: variable.$blackColor;
+}
 .page__title{
   & > span{
     display: block;
@@ -171,6 +184,10 @@
     h3{
       margin-bottom:10px;
       padding-bottom:0;
+    }
+    p{
+      margin-top:20px;
+      line-height:25px;
     }
     margin:0 auto;
     margin-bottom:30px;

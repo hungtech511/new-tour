@@ -91,7 +91,7 @@ button[disabled]:hover {
   text-align: justify;
 }
 .tour__card:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .tour__card:hover img {
   transform: scale(1.1);
@@ -158,8 +158,9 @@ button[disabled]:hover {
   font-weight: 700;
 }
 
-.our__team--slider .team__slider--item {
+.our__team--slider .team__slider--item .slider__item--image {
   text-align: center;
+  overflow: hidden;
 }
 .our__team--slider .team__slider--item .team__slider--content {
   position: absolute;
@@ -176,7 +177,7 @@ button[disabled]:hover {
 .our__team--slider .team__slider--item .slider__item--info {
   width: 100%;
   transform: rotateY(0deg);
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.08);
+  padding: 10px 0;
 }
 .our__team--slider .team__slider--item .slider__item--info .our__team--name {
   font-weight: 700;
@@ -199,17 +200,39 @@ button[disabled]:hover {
   background: #fff;
   transition: all 1s;
 }
+.our__team--slider .team__slider--item:hover .overlay {
+  opacity: 0.7;
+}
 .our__team--slider .team__slider--item:hover .team__slider--content {
   transform: translate(-50%, -50%);
   bottom: 50%;
+  z-index: 2;
 }
 .our__team--slider .team__slider--item:hover .slider__item--info {
   transform: rotateY(180deg);
 }
 .our__team--slider .team__slider--item:hover .slider__item--say {
+  z-index: 2;
   transform: rotateY(0deg) translateY(50%);
 }
+.our__team--slider .team__slider--item:hover img {
+  transform: scale(1.1);
+}
 
+.last__comment--slider .owl-stage-outer {
+  padding: 10px 0;
+}
+.last__comment--slider .owl-stage-outer .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.last__comment--slider .comment__slider--item {
+  padding: 10px 20px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  background: #fff;
+  border-radius: 8px;
+}
 .last__comment--slider .comment__slider--item .slider__item--info {
   display: flex;
   align-items: center;
@@ -227,7 +250,10 @@ button[disabled]:hover {
   margin-top: 15px;
   line-height: 25px;
   text-align: justify;
-  min-height: 125px;
+}
+.last__comment--slider .owl-item.active.center .comment__slider--item {
+  opacity: 1;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .owl-carousel .owl-dots {
