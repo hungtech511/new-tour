@@ -2,127 +2,127 @@
 
 // ---------- Change Container ----------
 @mixin make-container() {
-  // max-width:1260px
-  padding-right: 30px;
-  padding-left: 30px;
+	// max-width:1260px
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 @media (min-width: 1200px) {
-  .container {
-    @include make-container();
-  }
+	.container {
+		@include make-container();
+	}
 }
 
 // ---------- Using Color Class Name ----------
 
 @mixin color-text($color) {
-  color: $color;
-  transition: all 0.3s;
+	color: $color;
+	transition: all 0.3s;
 }
 
 .orange-text-color {
-  @include color-text(variable.$secondaryColor);
+	@include color-text(variable.$secondaryColor);
 }
 
 .primary-text-color {
-  @include color-text(variable.$primaryColor);
+	@include color-text(variable.$primaryColor);
 }
 .dark-text-color {
-  @include color-text(variable.$blackColor);
+	@include color-text(variable.$blackColor);
 }
 .less-gray-color {
-  @include color-text(variable.$thirdGrayColor);
+	@include color-text(variable.$thirdGrayColor);
 }
 .less-gray-color:hover {
-  color: variable.$thirdGrayColor;
+	color: variable.$thirdGrayColor;
 }
 // .hover-to-primary-text:hover {
 //   color: variable.$secondaryColor;
 // }
-.hover-to-primary-bg:hover{
-  background: variable.$primaryColor;
+.hover-to-primary-bg:hover {
+	background: variable.$primaryColor;
 }
-.primary-bg{
-  background: variable.$primaryColor;
+.primary-bg {
+	background: variable.$primaryColor;
 }
 .gray-bg {
-  background: variable.$grayBackground;
+	background: variable.$grayBackground;
 }
 .secondary-green-bg {
-  background: variable.$secondaryprimaryColor;
+	background: variable.$secondaryprimaryColor;
 }
-.hover-to-secondary-text:hover{
-  color: variable.$secondaryColor;
+.hover-to-secondary-text:hover {
+	color: variable.$secondaryColor;
 }
 
 @mixin font-size() {
-  $font-size-list: 14 16 18 20 24 28 32 36;
+	$font-size-list: 14 16 18 20 24 28 32 36;
 
-  @each $value in $font-size-list {
-    .font-size-#{$value} {
-      font-size: $value + px;
-    }
-  }
+	@each $value in $font-size-list {
+		.font-size-#{$value} {
+			font-size: $value + px;
+		}
+	}
 }
 
 @mixin margin-top() {
-  $margin-top-list: 10 15 20;
+	$margin-top-list: 10 15 20;
 
-  @each $value in $margin-top-list {
-    .margin-top-#{$value} {
-      margin-top: $value + px;
-    }
-  }
+	@each $value in $margin-top-list {
+		.margin-top-#{$value} {
+			margin-top: $value + px;
+		}
+	}
 }
 
 @mixin margin-right() {
-  $margin-right-list: 30;
+	$margin-right-list: 30;
 
-  @each $value in $margin-right-list {
-    .margin-right-#{$value} {
-      margin-right: $value + px;
-    }
-  }
+	@each $value in $margin-right-list {
+		.margin-right-#{$value} {
+			margin-right: $value + px;
+		}
+	}
 }
 
 @mixin margin-bottom() {
-  $margin-bottom-list: 10 15 20;
+	$margin-bottom-list: 10 15 20;
 
-  @each $value in $margin-bottom-list {
-    .margin-bottom-#{$value} {
-      margin-bottom: $value + px;
-    }
-  }
+	@each $value in $margin-bottom-list {
+		.margin-bottom-#{$value} {
+			margin-bottom: $value + px;
+		}
+	}
 }
 
 @mixin margin-left() {
-  $margin-left-list: 30;
+	$margin-left-list: 30;
 
-  @each $value in $margin-left-list {
-    .margin-left-#{$value} {
-      margin-left: $value + px;
-    }
-  }
+	@each $value in $margin-left-list {
+		.margin-left-#{$value} {
+			margin-left: $value + px;
+		}
+	}
 }
 
 @mixin width-divide-part() {
-  $width-part: 2 4 5 6;
+	$width-part: 2 4 5 6;
 
-  @each $value in $width-part {
-    .width-#{$value} {
-      width: calc(100% * 1 / $value);
-    }
-  }
+	@each $value in $width-part {
+		.width-#{$value} {
+			width: calc(100% * 1 / $value);
+		}
+	}
 }
 
 @mixin font-weight-part() {
-  $width-part: 200 300 400 500 600 700 800 900;
+	$width-part: 200 300 400 500 600 700 800 900;
 
-  @each $value in $width-part {
-    .font-weight-#{$value} {
-      font-weight: $value;
-    }
-  }
+	@each $value in $width-part {
+		.font-weight-#{$value} {
+			font-weight: $value;
+		}
+	}
 }
 
 @include font-size();
@@ -134,6 +134,7 @@
 @include font-weight-part();
 
 // ---------- Common Class ----------
+
 
 .section{
   padding:50px 0;
@@ -232,173 +233,170 @@
         color:variable.$primaryColor;
       }
     }
-}
 
 .heading__section {
-  margin-bottom: 30px;
-  h3 {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
+	margin-bottom: 30px;
+	h3 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
 }
 .only__heading {
-  margin-bottom: 20px;
-  h3 {
-    font-size: 24px;
-  }
+	margin-bottom: 20px;
+	h3 {
+		font-size: 24px;
+	}
 }
 .section__title {
-  margin-bottom: 20px;
-  h4 {
-    font-size: 16px;
-  }
+	margin-bottom: 20px;
+	h4 {
+		font-size: 16px;
+	}
 }
 
 .rating__stars {
-  i {
-    color: variable.$yellowColor;
-    width: 20px;
-    height: 20px;
-  }
+	i {
+		color: variable.$yellowColor;
+		width: 20px;
+		height: 20px;
+	}
 }
 // Social Media
 .social__media {
-  margin-top: 14px;
-  padding-left: variable.$paddingLeftMobile;
-  & > li {
-    display: inline-block;
-    & > a {
-      display: inline-block;
-      font-size: 18px;
-      line-height: 30px;
-      width: 30px;
-      height: 30px;
-      border-radius: 36px;
-      background-color: #cccccc;
-      color: #fff;
-      margin-right: 10px;
-      text-align: center;
-    }
-  }
+	margin-top: 14px;
+	padding-left: variable.$paddingLeftMobile;
+	& > li {
+		display: inline-block;
+		& > a {
+			display: inline-block;
+			font-size: 18px;
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+			border-radius: 36px;
+			background-color: #cccccc;
+			color: #fff;
+			margin-right: 10px;
+			text-align: center;
+		}
+	}
 }
 
 .search__form--box {
-  & > div {
-    margin-right: 17px;
-  }
+	& > div {
+		margin-right: 17px;
+	}
 }
 
 .breadcrumb__sort {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  .sort__result {
-    a:not(:last-child) {
-      margin: 0 8px;
-    }
-  }
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	.sort__result {
+		a:not(:last-child) {
+			margin: 0 8px;
+		}
+	}
 }
 
 .breadcrumb {
-  li {
-    a {
-      color: variable.$blackColor;
-      &:hover {
-        color: variable.$primaryColor;
-      }
-    }
-  }
-  .breadcrumb-item + .breadcrumb-item::before {
-    margin: 0 15px;
-    padding: 0;
-  }
+	li {
+		a {
+			color: variable.$blackColor;
+			&:hover {
+				color: variable.$primaryColor;
+			}
+		}
+	}
+	.breadcrumb-item + .breadcrumb-item::before {
+		margin: 0 15px;
+		padding: 0;
+	}
 }
 
 .icon__title {
-  i {
-    color: #333;
-  }
-  margin-right: 10px;
+	i {
+		color: #333;
+	}
+	margin-right: 10px;
 }
 span:first-child {
-  font-weight: 700;
+	font-weight: 700;
 }
 a {
-  color: variable.$grayColor;
-  &:hover {
-    color: variable.$primaryColor;
-  }
+	color: variable.$grayColor;
+	&:hover {
+		color: variable.$primaryColor;
+	}
 }
-
-
 
 // Highlight
-.list__check{
-  margin-top:20px;
-  li{
-    position: relative;
-    padding-left:18px;
-    &::before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Pro";
-      position: absolute;
-      left: 0;
-      color: variable.$primaryColor;
-      font-size: 12px;
-    }
-  }
-  * + li{
-    margin-top:10px;
-  }
-  &.error{
-    li{
-      &::before {
-        content: "\f00d";
-        color: variable.$secondaryColor;
-      }
-    }
-  }
+.list__check {
+	margin-top: 20px;
+	li {
+		position: relative;
+		padding-left: 18px;
+		&::before {
+			content: "\f00c";
+			font-family: "Font Awesome 5 Pro";
+			position: absolute;
+			left: 0;
+			color: variable.$primaryColor;
+			font-size: 12px;
+		}
+	}
+	* + li {
+		margin-top: 10px;
+	}
+	&.error {
+		li {
+			&::before {
+				content: "\f00d";
+				color: variable.$secondaryColor;
+			}
+		}
+	}
 }
 
-.info__icon{
-  position: relative;
-  transition: all .2s ease-in-out;
-  &::after{
-  opacity: 0;
-  position: absolute;
-  right:-200%;
-  bottom:200%;
-  text-transform:none;
-  background: #666;
-  border-radius: 2px;
-  color: #fff;
-  content: attr(data-info);
-  font-size: 14px;
-  padding: 8px;
-  width:max-content;
-  max-width:250px;
-  z-index: 5; 
-  transform: scale3d(.2,.2,1) translateX(50%);
-  transition: all .15s ease-in-out;
-  }
-  &:hover{
-    &::after{
-      opacity: 1;
-      transform: scale3d(1,1,1) translateX(50%);
-    }
-  }
+.info__icon {
+	position: relative;
+	transition: all 0.2s ease-in-out;
+	&::after {
+		opacity: 0;
+		position: absolute;
+		right: -200%;
+		bottom: 200%;
+		text-transform: none;
+		background: #666;
+		border-radius: 2px;
+		color: #fff;
+		content: attr(data-info);
+		font-size: 14px;
+		padding: 8px;
+		width: max-content;
+		max-width: 250px;
+		z-index: 5;
+		transform: scale3d(0.2, 0.2, 1) translateX(50%);
+		transition: all 0.15s ease-in-out;
+	}
+	&:hover {
+		&::after {
+			opacity: 1;
+			transform: scale3d(1, 1, 1) translateX(50%);
+		}
+	}
 }
 
-.breadcrumb__sort{
-  padding-top:16px;
+.breadcrumb__sort {
+	padding-top: 16px;
 }
 
-.background__image{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  color: variable.$whiteColor;
+.background__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	color: variable.$whiteColor;
 }
