@@ -135,87 +135,104 @@
 
 // ---------- Common Class ----------
 
-.section {
-	padding: 50px 0;
+
+.section{
+  padding:50px 0;
 }
 
-.page__title {
-	& > span {
-		display: block;
-		margin-bottom: 10px;
-		color: variable.$secondaryColor;
-		text-transform: uppercase;
-		letter-spacing: 3.5px;
-	}
-	h3 {
-		font-size: 42px;
-		margin-bottom: 25px;
-		padding-bottom: 10px;
-		position: relative;
-		&.has-border::after {
-			content: "";
-			position: absolute;
-			top: 100%;
-			left: 0;
-			background: variable.$secondaryColor;
-			height: 3px;
-			width: 10%;
-		}
-		&.border-center::after {
-			left: 50%;
-			transform: translateX(-50%);
-		}
-	}
-	&.has-paragraph {
-		max-width: 600px;
-		h3 {
-			margin-bottom: 10px;
-			padding-bottom: 0;
-		}
-		margin: 0 auto;
-		margin-bottom: 30px;
-	}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: .5s ease;
+  background-color: variable.$blackColor;
+}
+.page__title{
+  & > span{
+    display: block;
+    margin-bottom:10px;
+    color:variable.$secondaryColor;
+    text-transform:uppercase;
+    letter-spacing:3.5px;
+  }
+  h3{
+    font-size: 42px;
+    margin-bottom:25px;
+    padding-bottom:10px;
+    position: relative;
+    &.has-border::after{
+      content:"";
+      position: absolute;
+      top:100%;
+      left:0;
+      background:variable.$secondaryColor;
+      height:3px;
+      width:10%;
+    }
+    &.border-center::after{
+      left:50%;
+      transform:translateX(-50%);
+    }
+  }
+  &.has-paragraph{
+    max-width: 600px;
+    h3{
+      margin-bottom:10px;
+      padding-bottom:0;
+    }
+    p{
+      margin-top:20px;
+      line-height:25px;
+    }
+    margin:0 auto;
+    margin-bottom:30px;
+  }
 }
 
-.play-btn {
-	display: block;
-	position: relative;
-	background-color: variable.$secondaryColor;
-	border-radius: 50%;
-	height: 70px;
-	width: 70px;
-	margin: 0 auto;
-	cursor: pointer;
-	animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 0);
-	box-shadow: 0 0 0 0 rgb(233 183 84 / 50%);
-	transition: all 0.3s;
+.play-btn{
+  display: block;
+    position: relative;
+    background-color: variable.$secondaryColor;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    cursor: pointer;
+    animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgb(233 183 84 / 50%);
+    transition: all .3s;
 
-	@keyframes pulse {
-		to {
-			box-shadow: 0 0 0 20px rgba(245, 91, 21, 0);
-		}
-	}
+    @keyframes pulse {
+      to {
+        box-shadow: 0 0 0 20px rgba(245, 91, 21, 0);
+      }
+    }
 
-	&:after {
-		content: "\f04b";
-		font-family: "Font Awesome 5 Pro";
-		color: #fff;
-		position: absolute;
-		font-size: 20px;
-		font-weight: 900;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		transition: all 0.5s;
-	}
-	&:hover {
-		background: variable.$whiteColor;
-		box-shadow: 0 0 0 0 rgb(246 0 1 / 30%);
-		&:after {
-			color: variable.$primaryColor;
-		}
-	}
-}
+    &:after{
+      content: "\f04b";
+      font-family: "Font Awesome 5 Pro";
+      color: #fff;
+      position: absolute;
+      font-size: 20px;
+      font-weight: 900;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s;
+    }
+    &:hover{
+      background: variable.$whiteColor;
+      box-shadow: 0 0 0 0 rgb(246 0 1 / 30%);
+      &:after{
+        color:variable.$primaryColor;
+      }
+    }
 
 .heading__section {
 	margin-bottom: 30px;

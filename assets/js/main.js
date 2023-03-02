@@ -253,9 +253,12 @@ $(document).ready(function () {
 				$(this)
 					.find(".owl-carousel")
 					.owlCarousel({
+						center: !0,
 						autoplay: false,
 						dots: true,
 						autoplayTimeout: 5000,
+						loop:!0,
+						margin:30,
 						responsive: {
 							0: {
 								items: 1,
@@ -267,7 +270,7 @@ $(document).ready(function () {
 								items: 2,
 							},
 							1200: {
-								items: 3,
+								items: 2,
 							},
 						},
 					});
