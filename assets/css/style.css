@@ -11939,20 +11939,6 @@ h4 {
   padding: 50px 0;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  z-index: 1;
-  transition: 0.5s ease;
-  background-color: #333;
-}
-
 .page__title > span {
   display: block;
   margin-bottom: 10px;
@@ -11987,10 +11973,6 @@ h4 {
 .page__title.has-paragraph h3 {
   margin-bottom: 10px;
   padding-bottom: 0;
-}
-.page__title.has-paragraph p {
-  margin-top: 20px;
-  line-height: 25px;
 }
 
 .play-btn {
@@ -12596,6 +12578,19 @@ button[disabled]:hover {
   position: relative;
   overflow: hidden;
 }
+.tour__card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #333;
+  z-index: 1;
+}
 .tour__card a {
   display: block;
   height: 100%;
@@ -12625,7 +12620,7 @@ button[disabled]:hover {
   text-align: justify;
 }
 .tour__card:hover .overlay {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .tour__card:hover img {
   transform: scale(1.1);
@@ -12888,8 +12883,8 @@ button[disabled]:hover {
 }
 .top__10--destination .owl-nav {
   position: absolute;
-  top: -15%;
-  right: 4px;
+  top: -25%;
+  right: 15%;
   transform: translateY(-50%);
 }
 .top__10--destination .owl-nav button {
