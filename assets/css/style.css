@@ -11975,6 +11975,20 @@ h4 {
   padding-bottom: 0;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: #333;
+  z-index: 1;
+}
+
 .play-btn {
   display: block;
   position: relative;
@@ -12578,19 +12592,6 @@ button[disabled]:hover {
   position: relative;
   overflow: hidden;
 }
-.tour__card .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: #333;
-  z-index: 1;
-}
 .tour__card a {
   display: block;
   height: 100%;
@@ -12691,21 +12692,49 @@ button[disabled]:hover {
   padding: 25px;
   text-align: center;
 }
-.our__team--slider .team__slider--item img {
-  border-radius: 50%;
+.our__team--slider .team__slider--item .team__slider--content {
+  position: absolute;
+  text-align: center;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -55%);
+  left: 50%;
+  background: #fff;
+  width: 80%;
+  border-radius: 8px;
+  bottom: 0%;
 }
 .our__team--slider .team__slider--item .slider__item--info {
-  margin-top: 15px;
+  width: 90%;
+  transform: rotateY(0deg);
 }
-.our__team--slider .team__slider--item .our__team--name {
+.our__team--slider .team__slider--item .slider__item--info .our__team--name {
   font-weight: 700;
 }
-.our__team--slider .team__slider--item .our__team--position {
+.our__team--slider .team__slider--item .slider__item--info .our__team--position {
   font-weight: 700;
 }
 .our__team--slider .team__slider--item .slider__item--say {
-  text-align: justify;
-  margin-top: 5px;
+  transform: rotateY(-180deg);
+}
+.our__team--slider .team__slider--item .slider__item--info,
+.our__team--slider .team__slider--item .slider__item--say {
+  position: absolute;
+  bottom: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: #fff;
+  transition: all 1s;
+}
+.our__team--slider .team__slider--item:hover .team__slider--content {
+  transform: translate(-50%, -135%);
+  bottom: 50%;
+}
+.our__team--slider .team__slider--item:hover .slider__item--info {
+  transform: rotateY(180deg);
+}
+.our__team--slider .team__slider--item:hover .slider__item--say {
+  transform: rotateY(0deg);
 }
 
 .last__comment--slider .comment__slider--item .slider__item--info {

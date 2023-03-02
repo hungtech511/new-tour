@@ -7,28 +7,28 @@
       min-height: 70px;
       line-height: 22px;
     }
-    p:not(.content__time){
-      margin-top:10px;
+    p:not(.content__time) {
+      margin-top: 10px;
       line-height: 30px;
     }
     .content__time {
       margin: 20px 0;
       position: relative;
-      padding-left:20px;
-      &::before{
+      padding-left: 20px;
+      &::before {
         content: "\f133";
         position: absolute;
-        left:0;
-        font-family:"Font Awesome 5 Pro";
+        left: 0;
+        font-family: "Font Awesome 5 Pro";
       }
     }
   }
 }
 
-.client__reviews--slider{
-    .owl-stage{
-        margin-bottom:20px;
-    }
+.client__reviews--slider {
+  .owl-stage {
+    margin-bottom: 20px;
+  }
 }
 .client__reviews--item {
   background: #fff;
@@ -66,21 +66,51 @@
   .team__slider--item {
     padding: 25px;
     text-align: center;
-    img {
-      border-radius: 50%;
+    .team__slider--content {
+      position: absolute;
+      text-align: center;
+      transition: all 1s;
+      transform-style: preserve-3d;
+      transform: translate(-50%, -55%);
+      left: 50%;
+      background: variable.$whiteColor;
+      width: 80%;
+      border-radius: 8px;
+      bottom:0%;
     }
     .slider__item--info {
-      margin-top: 15px;
-    }
-    .our__team--name {
-      font-weight: 700;
-    }
-    .our__team--position {
-      font-weight: 700;
+      width: 90%;
+      transform: rotateY(0deg);
+      .our__team--name {
+        font-weight: 700;
+      }
+      .our__team--position {
+        font-weight: 700;
+      }
     }
     .slider__item--say {
-      text-align: justify;
-      margin-top: 5px;
+      transform: rotateY(-180deg);
+    }
+    .slider__item--info,
+    .slider__item--say{
+      position: absolute;
+      bottom:0;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      background:variable.$whiteColor;
+      transition: all 1s;
+    }
+    &:hover {
+      .team__slider--content{
+        transform: translate(-50%, -135%);
+        bottom: 50%;
+      }
+      .slider__item--info {
+        transform: rotateY(180deg);
+      }
+      .slider__item--say {
+        transform: rotateY(0deg);
+      }
     }
   }
 }
@@ -121,8 +151,8 @@
     button.active {
       span {
         background-color: variable.$secondaryColor;
-        width:45px;
-        height:8px;
+        width: 45px;
+        height: 8px;
         border-radius: 8px;
         border-color: transparent;
       }
@@ -133,7 +163,7 @@
       height: 8px;
       border-radius: 8px;
       border: 1px solid rgba(102, 102, 102, 0.4);
-      transition: all .2s ease;
+      transition: all 0.2s ease;
       transition-property: background-color, border-color, width;
     }
   }
