@@ -62,19 +62,6 @@ button[disabled]:hover {
   position: relative;
   overflow: hidden;
 }
-.tour__card .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.3s ease;
-  background-color: #333;
-  z-index: 1;
-}
 .tour__card a {
   display: block;
   height: 100%;
@@ -104,7 +91,7 @@ button[disabled]:hover {
   text-align: justify;
 }
 .tour__card:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .tour__card:hover img {
   transform: scale(1.1);
@@ -171,27 +158,81 @@ button[disabled]:hover {
   font-weight: 700;
 }
 
-.our__team--slider .team__slider--item {
-  padding: 25px;
+.our__team--slider .team__slider--item .slider__item--image {
   text-align: center;
+  overflow: hidden;
 }
-.our__team--slider .team__slider--item img {
-  border-radius: 50%;
+.our__team--slider .team__slider--item .team__slider--content {
+  position: absolute;
+  text-align: center;
+  transition: all 1s;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -55%);
+  left: 50%;
+  background: #fff;
+  width: 80%;
+  border-radius: 8px;
+  bottom: 0%;
 }
 .our__team--slider .team__slider--item .slider__item--info {
-  margin-top: 15px;
+  width: 100%;
+  transform: rotateY(0deg);
+  padding: 10px 0;
 }
-.our__team--slider .team__slider--item .our__team--name {
+.our__team--slider .team__slider--item .slider__item--info .our__team--name {
   font-weight: 700;
 }
-.our__team--slider .team__slider--item .our__team--position {
+.our__team--slider .team__slider--item .slider__item--info .our__team--position {
   font-weight: 700;
 }
 .our__team--slider .team__slider--item .slider__item--say {
-  text-align: justify;
-  margin-top: 5px;
+  padding: 10px 20px;
+  transform: rotateY(-180deg);
+}
+.our__team--slider .team__slider--item .slider__item--info,
+.our__team--slider .team__slider--item .slider__item--say {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: #fff;
+  transition: all 1s;
+}
+.our__team--slider .team__slider--item:hover .overlay {
+  opacity: 0.7;
+}
+.our__team--slider .team__slider--item:hover .team__slider--content {
+  transform: translate(-50%, -50%);
+  bottom: 50%;
+  z-index: 2;
+}
+.our__team--slider .team__slider--item:hover .slider__item--info {
+  transform: rotateY(180deg);
+}
+.our__team--slider .team__slider--item:hover .slider__item--say {
+  z-index: 2;
+  transform: rotateY(0deg) translateY(50%);
+}
+.our__team--slider .team__slider--item:hover img {
+  transform: scale(1.1);
 }
 
+.last__comment--slider .owl-stage-outer {
+  padding: 10px 0;
+}
+.last__comment--slider .owl-stage-outer .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.last__comment--slider .comment__slider--item {
+  padding: 10px 20px;
+  transition: all 0.3s;
+  opacity: 0.5;
+  background: #fff;
+  border-radius: 8px;
+}
 .last__comment--slider .comment__slider--item .slider__item--info {
   display: flex;
   align-items: center;
@@ -209,7 +250,10 @@ button[disabled]:hover {
   margin-top: 15px;
   line-height: 25px;
   text-align: justify;
-  min-height: 125px;
+}
+.last__comment--slider .owl-item.active.center .comment__slider--item {
+  opacity: 1;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .owl-carousel .owl-dots {
@@ -367,8 +411,8 @@ button[disabled]:hover {
 }
 .top__10--destination .owl-nav {
   position: absolute;
-  top: -25%;
-  right: 15%;
+  top: -15%;
+  right: 4px;
   transform: translateY(-50%);
 }
 .top__10--destination .owl-nav button {
