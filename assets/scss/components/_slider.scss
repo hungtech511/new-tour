@@ -7,8 +7,20 @@
       min-height: 70px;
       line-height: 22px;
     }
+    p:not(.content__time){
+      margin-top:10px;
+      line-height: 30px;
+    }
     .content__time {
       margin: 20px 0;
+      position: relative;
+      padding-left:20px;
+      &::before{
+        content: "\f133";
+        position: absolute;
+        left:0;
+        font-family:"Font Awesome 5 Pro";
+      }
     }
   }
 }

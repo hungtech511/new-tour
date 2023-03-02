@@ -12637,8 +12637,20 @@ button[disabled]:hover {
   min-height: 70px;
   line-height: 22px;
 }
+.blog__slider--item .slider__item--content p:not(.content__time) {
+  margin-top: 10px;
+  line-height: 30px;
+}
 .blog__slider--item .slider__item--content .content__time {
   margin: 20px 0;
+  position: relative;
+  padding-left: 20px;
+}
+.blog__slider--item .slider__item--content .content__time::before {
+  content: "\f133";
+  position: absolute;
+  left: 0;
+  font-family: "Font Awesome 5 Pro";
 }
 
 .client__reviews--slider .owl-stage {
