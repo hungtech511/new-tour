@@ -1,79 +1,18 @@
-.destination__item img {
-  width: 100%;
-}
-.destination__item--content {
-  background: #fff;
-}
-.destination__item--content h3 {
-  font-size: 14px;
-  padding: 10px 14px;
-  padding-bottom: 0;
-  margin-bottom: 10px;
-}
-.destination__item--content .item__list li + li {
-  margin-top: 10px;
-}
-.destination__item--content .item__list li {
-  display: flex;
-  padding: 0 14px;
-}
-.destination__item .item__price {
-  background: #fff;
-  padding: 14px !important;
-  border-top: 1px solid #e3e3e3;
-}
-.destination__item .item__price span:first-child {
-  margin-right: 14px;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @import "../../node_modules/bootstrap/scss/functions";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   assets/scss/components/_pagination.scss 3:9  @use
+ *   assets/scss/page/list-tour.scss 2:1          root stylesheet */
 
-.page__pagination {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"../../node_modules/bootstrap/scss/functions\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/scss/components/_pagination.scss 3:9  @use\a   assets/scss/page/list-tour.scss 2:1          root stylesheet";
 }
-.page__pagination > * {
-  padding: 4px;
-  margin-left: 8px;
-  border: 1px solid #d4d4d4;
-  border-radius: 5px;
-  position: relative;
-}
-.page__pagination > .page__active {
-  color: #fff !important;
-  background: #f60001;
-  border: none;
-}
-.page__pagination > .page__active a {
-  color: #fff;
-}
-.page__pagination a {
-  padding: 5px;
-}
-
-@media (max-width: 767.98px) {
-  .page__pagination {
-    margin-top: 30px;
-  }
-}
-.destination .breadcrumb__sort {
-  padding-top: 16px;
-}
-.destination .search__form {
-  margin-bottom: 26px;
-  padding: 10px 0 10px 10px;
-}
-
-@media (min-width: 768px) {
-  .search__form .col-lg-2 {
-    width: 20%;
-  }
-}
-@media (max-width: 991.98px) {
-  .search__form {
-    border: 1px solid #e3e3e3;
-    border-radius: 5px;
-  }
-}
-
-/*# sourceMappingURL=list-tour.css.map */
