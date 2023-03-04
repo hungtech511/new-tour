@@ -7,13 +7,14 @@
     position: relative;
     .destination__item--image{
         position: relative;
+        overflow: hidden;
     }
     img{
         width: 100%;
     }
     .destination__duration{
         position: absolute;
-        top: 100%;
+        top: 42%;
         transform: translateY(-50%);
         left: 3%;
         background:variable.$whiteColor;

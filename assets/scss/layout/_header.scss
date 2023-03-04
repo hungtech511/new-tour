@@ -31,12 +31,16 @@
       border-bottom: 1px solid #ecebeb;
         .header__navbar {
           & > li {
+            display: inline-block;
+            cursor: pointer;
             & > a:not(.logo) {
               @extend .navTag;
               height: 50px;
               padding: 0px 20px;
               font-size: 15px;
               color: variable.$blackColor;
+              // display: inline-block;
+              // position: relative;
             }
 
             &:hover {

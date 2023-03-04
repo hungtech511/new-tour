@@ -7,13 +7,14 @@
 }
 .destination__item .destination__item--image {
   position: relative;
+  overflow: hidden;
 }
 .destination__item img {
   width: 100%;
 }
 .destination__item .destination__duration {
   position: absolute;
-  top: 100%;
+  top: 42%;
   transform: translateY(-50%);
   left: 3%;
   background: #fff;
