@@ -328,13 +328,14 @@ button[disabled]:hover {
   margin-right: 20px;
 }
 .home__background--content {
+  color: #fff;
   position: relative;
   z-index: 2;
 }
 @media (max-width: 991.98px) {
   .home__background--desktop {
     height: auto;
-    padding-top: 20px;
+    padding: 20px 0;
     display: block;
     background-image: none;
     color: #333;

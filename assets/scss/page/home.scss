@@ -44,6 +44,7 @@
 		}
 	}
 	&--content{
+		color:variable.$whiteColor;
 		position: relative;
 		z-index: 2;
 	}
@@ -55,7 +56,7 @@
 				height: auto !important;
 			}
 			height: auto;
-			padding-top: 20px;
+			padding: 20px 0;
 			display: block;
 			background-image: none;
 			color: variable.$blackColor;

@@ -63,6 +63,15 @@ $(document).ready(function () {
 	// Background page
 	renderBackgroundImageHeight();
 
+	$(document).on({
+		mouseenter: function() {
+			$(this).find("div.navbar__dropdown").addClass("active")
+		},
+		mouseleave: function() {
+			$(this).find("div.navbar__dropdown").removeClass("active")
+		}
+	}, '.header__navbar > li');
+
 	// render grid dynamic
 	if ($(".top__10--wrapper").length > 0) {
 		let wrapper = $(".top__10--wrapper").html();
@@ -145,6 +154,14 @@ $(document).ready(function () {
 							"<i class='far fa-chevron-right'></i>",
 						],
 						items:1,
+						responsive:{
+							0:{
+								nav:false
+							},
+							991:{
+								nav:false
+							}
+						}
 					});
 			});
 		}

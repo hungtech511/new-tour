@@ -656,7 +656,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1460px;
   }
 }
 .row {
@@ -12230,6 +12230,10 @@ a:hover {
   background: #fff;
   border-bottom: 1px solid #ecebeb;
 }
+.header__desktop .header__bottom .header__navbar > li {
+  display: inline-block;
+  cursor: pointer;
+}
 .header__desktop .header__bottom .header__navbar > li > a:not(.logo) {
   height: 50px;
   padding: 0px 20px;
@@ -12885,13 +12889,14 @@ button[disabled]:hover {
   margin-right: 20px;
 }
 .home__background--content {
+  color: #fff;
   position: relative;
   z-index: 2;
 }
 @media (max-width: 991.98px) {
   .home__background--desktop {
     height: auto;
-    padding-top: 20px;
+    padding: 20px 0;
     display: block;
     background-image: none;
     color: #333;
@@ -13100,13 +13105,14 @@ button[disabled]:hover {
 }
 .destination__item .destination__item--image {
   position: relative;
+  overflow: hidden;
 }
 .destination__item img {
   width: 100%;
 }
 .destination__item .destination__duration {
   position: absolute;
-  top: 100%;
+  top: 42%;
   transform: translateY(-50%);
   left: 3%;
   background: #fff;
