@@ -1044,49 +1044,71 @@
 
     <div class="sticky-placeholder"></div>
 
-    <div class="destination gray-bg">
+    <div class="destination">
+              <!-- Breadcrumb & Sort -->
+              <div class="breadcrumb__sort">
+                <div class="overlay-bg"></div>
+                <div class="container">
+                  <nav class="breadcrumb__nav" aria-label="breadcrumb">
+                    <div class="breadcrumb__title text-center">Excursions</div>
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li class="breadcrumb-item"><a href="#">Excursions</a></li>
+                      <li class="breadcrumb-item" aria-current="page">
+                        <a href="/en/vietnam-tour/hanoi-vicinity"
+                          >Hanoi &amp; Vicinity</a
+                        >
+                      </li>
+                      <li class="breadcrumb-item"><a href="#">Hanoi</a></li>
+                    </ol>
+                  </nav>
+                  <!-- <div class="sort__result ms-auto d-lg-block d-none">
+                    <span
+                      class="font-size-14 all__tours font-weight-700 orange-text-color"
+                      >33</span
+                    >
+                    tours
+                    <a class="dark-text-color" href="/?sort=asc"
+                      >Shortest <i class="fal fa-long-arrow-up primary-text-color"></i
+                    ></a>
+                    <a class="dark-text-color" href="/?sort=asc"
+                      >Longest <i class="fal fa-long-arrow-down orange-text-color"></i
+                    ></a>
+                  </div> -->
+                </div>
+              </div>
+              <!-- Breadcrumb & Sort -->
       <div class="container">
-        <!-- Breadcrumb & Sort -->
-        <div class="breadcrumb__sort">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="breadcrumb-item"><a href="#">Excursions</a></li>
-              <li class="breadcrumb-item" aria-current="page">
-                <a href="/en/vietnam-tour/hanoi-vicinity"
-                  >Hanoi &amp; Vicinity</a
-                >
-              </li>
-              <li class="breadcrumb-item"><a href="#">Hanoi</a></li>
-            </ol>
-          </nav>
-          <div class="sort__result ms-auto d-lg-block d-none">
-            <span
-              class="font-size-14 all__tours font-weight-700 orange-text-color"
-              >33</span
-            >
-            tours
-            <a class="dark-text-color" href="/?sort=asc"
-              >Shortest <i class="fal fa-long-arrow-up primary-text-color"></i
-            ></a>
-            <a class="dark-text-color" href="/?sort=asc"
-              >Longest <i class="fal fa-long-arrow-down orange-text-color"></i
-            ></a>
-          </div>
-        </div>
-        <!-- Breadcrumb & Sort -->
-
         <!-- Search Form  -->
         <form
         id="search-package-tours-mobile"
-        action="" class="search__form secondary-green-bg"
+        action="" class="search__form"
       >
         <div class="search__form--box">
           <div class="row g-3">
-            <div class="col-lg-2 col-sm-6 col-6">
-              <select
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="fas fa-map-marker-alt"></i>
+                <label for="hi">From</label>
+                <select
+                name="start-package-tours"
+                class="select__form"
+                title="Destination you want to start from"
+              >
+                <option value="-1">Start From</option>
+                <option value="0">Any</option>
+                <option value="1">Ha Noi</option>
+                <option value="2">Ho Chi Minh</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="fas fa-map-marker-alt"></i>
+                <label for="Visit">Visit</label>
+                <select
                 name="start-package-tours"
                 class="select__form"
               >
@@ -1095,9 +1117,13 @@
                 <option value="1">Ha Noi</option>
                 <option value="2">Ho Chi Minh</option>
               </select>
+              </div>
             </div>
-            <div class="col-lg-2 col-sm-6 col-6">
-              <select
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="far fa-clock"></i>
+                <label for="Visit">Duration</label>
+                <select
                 name="start-package-tours"
                 class="select__form"
               >
@@ -1106,9 +1132,13 @@
                 <option value="1">Ha Noi</option>
                 <option value="2">Ho Chi Minh</option>
               </select>
+              </div>
             </div>
-            <div class="col-lg-2 col-sm-6 col-6">
-              <select
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="fal fa-passport"></i>
+                <label for="Visit">Travel Style</label>
+                <select
                 name="start-package-tours"
                 class="select__form"
               >
@@ -1117,9 +1147,13 @@
                 <option value="1">Ha Noi</option>
                 <option value="2">Ho Chi Minh</option>
               </select>
+              </div>
             </div>
-            <div class="col-lg-2 col-sm-6 col-6">
-              <select
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="fas fa-map-marker-alt"></i>
+                <label for="Visit">Category</label>
+                <select
                 name="start-package-tours"
                 class="select__form"
               >
@@ -1128,16 +1162,58 @@
                 <option value="1">Ha Noi</option>
                 <option value="2">Ho Chi Minh</option>
               </select>
+              </div>
             </div>
-            <div class="col-lg-2 text-lg-start text-center">
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="far fa-ship"></i>
+                <label for="Visit">Ship name</label>
+                <input type="text" placeholder="Ship name">
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="far fa-anchor"></i>
+                <label for="Visit">Cabin</label>
+                <select
+                name="start-package-tours"
+                class="select__form"
+              >
+                <option value="-1">Start From</option>
+                <option value="0">Any</option>
+                <option value="1">Ha Noi</option>
+                <option value="2">Ho Chi Minh</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="form-group">
+                <i class="far fa-smile"></i>
+                <label for="Visit">Rating</label>
+                <select
+                name="start-package-tours"
+                class="select__form"
+              >
+                <option value="-1">Start From</option>
+                <option value="0">Any</option>
+                <option value="1">Ha Noi</option>
+                <option value="2">Ho Chi Minh</option>
+              </select>
+              </div>
+            </div>
+
+            <div class="col-lg-2 text-lg-start text-center search__btn">
               <button class="button orange-button">Search</button>
             </div>
           </div>
         </div>
       </form>
       <!-- Search Form  -->
+    </div>
+
 
       <!-- Destination Item List -->
+      <div class="container">
         <div class="row g-4">
           <div class="col-lg-4 col-sm-6">
             <div class="destination__item">
@@ -1148,32 +1224,27 @@
                     alt="image tour"
                   />
                 </a>
+                <div class="destination__duration">
+                  <span><i class="far fa-clock"></i></span>
+                  <span class="font-weight-700"
+                    >01 Day</span
+                  >
+                </div>
               </div>
               <div class="destination__item--content">
                 <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
+                  <a class="dark-text-color hover-to-secondary-text" href="detail-tour.html"
                     >Hanoi full day city tour</a
                   >
                 </h3>
                 <ul class="item__list">
                   <li>
                     <div class="icon__title">
-                      <i class="fal fa-clock"></i>
+                      <i class="fas fa-map-marker-alt"></i>
                     </div>
                     <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
+                      <span>From: </span>
+                      <span>Hanoi</span>
                     </div>
                   </li>
                   <li>
@@ -1216,463 +1287,12 @@
                       >
                     </div>
                   </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
+                  <li class="item__price d-flex">
                     <div>
-                      <span>From </span>
                       <span class="font-weight-700 orange-text-color"> $ 33</span>
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="destination__item">
-              <div class="destination__item--image">
-                <a href="detail-tour.html">
-                  <img
-                    src="assets/image/detail-tour.jpg"
-                    alt="image tour"
-                  />
-                </a>
-              </div>
-              <div class="destination__item--content">
-                <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
-                    >Hanoi full day city tour</a
-                  >
-                </h3>
-                <ul class="item__list">
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-plane"></i>
-                    </div>
-                    <div>
-                      <span>Visit: </span>
-                      <span>Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-users"></i>
-                    </div>
-                    <div>
-                      <span>Category: </span>
-                      <span>Private tour</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-hotel"></i>
-                    </div>
-                    <div>
-                      <span>Tour guide in: </span>
-                      <span>
-                        English, Français, Español, Deutsch, Italiano</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-archway"></i>
-                    </div>
-                    <div>
-                      <span>Travel style: </span>
-                      <a href="#"> Most popular</a>,<a href="#">
-                        Culture and Heritage</a
-                      >
-                    </div>
-                  </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
-                    <div>
-                      <span>From </span>
-                      <span class="font-weight-700 orange-text-color"> $ 33</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="destination__item">
-              <div class="destination__item--image">
-                <a href="detail-tour.html">
-                  <img
-                    src="assets/image/detail-tour.jpg"
-                    alt="image tour"
-                  />
-                </a>
-              </div>
-              <div class="destination__item--content">
-                <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
-                    >Hanoi full day city tour</a
-                  >
-                </h3>
-                <ul class="item__list">
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-plane"></i>
-                    </div>
-                    <div>
-                      <span>Visit: </span>
-                      <span>Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-users"></i>
-                    </div>
-                    <div>
-                      <span>Category: </span>
-                      <span>Private tour</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-hotel"></i>
-                    </div>
-                    <div>
-                      <span>Tour guide in: </span>
-                      <span>
-                        English, Français, Español, Deutsch, Italiano</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-archway"></i>
-                    </div>
-                    <div>
-                      <span>Travel style: </span>
-                      <a href="#"> Most popular</a>,<a href="#">
-                        Culture and Heritage</a
-                      >
-                    </div>
-                  </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
-                    <div>
-                      <span>From </span>
-                      <span class="font-weight-700 orange-text-color"> $ 33</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="destination__item">
-              <div class="destination__item--image">
-                <a href="detail-tour.html">
-                  <img
-                    src="assets/image/detail-tour.jpg"
-                    alt="image tour"
-                  />
-                </a>
-              </div>
-              <div class="destination__item--content">
-                <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
-                    >Hanoi full day city tour</a
-                  >
-                </h3>
-                <ul class="item__list">
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-plane"></i>
-                    </div>
-                    <div>
-                      <span>Visit: </span>
-                      <span>Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-users"></i>
-                    </div>
-                    <div>
-                      <span>Category: </span>
-                      <span>Private tour</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-hotel"></i>
-                    </div>
-                    <div>
-                      <span>Tour guide in: </span>
-                      <span>
-                        English, Français, Español, Deutsch, Italiano</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-archway"></i>
-                    </div>
-                    <div>
-                      <span>Travel style: </span>
-                      <a href="#"> Most popular</a>,<a href="#">
-                        Culture and Heritage</a
-                      >
-                    </div>
-                  </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
-                    <div>
-                      <span>From </span>
-                      <span class="font-weight-700 orange-text-color"> $ 33</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="destination__item">
-              <div class="destination__item--image">
-                <a href="detail-tour.html">
-                  <img
-                    src="assets/image/detail-tour.jpg"
-                    alt="image tour"
-                  />
-                </a>
-              </div>
-              <div class="destination__item--content">
-                <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
-                    >Hanoi full day city tour</a
-                  >
-                </h3>
-                <ul class="item__list">
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-plane"></i>
-                    </div>
-                    <div>
-                      <span>Visit: </span>
-                      <span>Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-users"></i>
-                    </div>
-                    <div>
-                      <span>Category: </span>
-                      <span>Private tour</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-hotel"></i>
-                    </div>
-                    <div>
-                      <span>Tour guide in: </span>
-                      <span>
-                        English, Français, Español, Deutsch, Italiano</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-archway"></i>
-                    </div>
-                    <div>
-                      <span>Travel style: </span>
-                      <a href="#"> Most popular</a>,<a href="#">
-                        Culture and Heritage</a
-                      >
-                    </div>
-                  </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
-                    <div>
-                      <span>From </span>
-                      <span class="font-weight-700 orange-text-color"> $ 33</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="destination__item">
-              <div class="destination__item--image">
-                <a href="detail-tour.html">
-                  <img
-                    src="assets/image/detail-tour.jpg"
-                    alt="image tour"
-                  />
-                </a>
-              </div>
-              <div class="destination__item--content">
-                <h3 class="item__title">
-                  <a class="dark-text-color hover-to-primary-text" href="detail-tour.html"
-                    >Hanoi full day city tour</a
-                  >
-                </h3>
-                <ul class="item__list">
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-clock"></i>
-                    </div>
-                    <div>
-                      <span>Duration:</span>
-                      <span class="font-weight-700 primary-text-color"
-                        >01 Day</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-flag"></i>
-                    </div>
-                    <div>
-                      <span>Start/End: </span>
-                      <span>Hanoi / Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-plane"></i>
-                    </div>
-                    <div>
-                      <span>Visit: </span>
-                      <span>Hanoi</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-users"></i>
-                    </div>
-                    <div>
-                      <span>Category: </span>
-                      <span>Private tour</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-hotel"></i>
-                    </div>
-                    <div>
-                      <span>Tour guide in: </span>
-                      <span>
-                        English, Français, Español, Deutsch, Italiano</span
-                      >
-                    </div>
-                  </li>
-                  <li>
-                    <div class="icon__title">
-                      <i class="fal fa-archway"></i>
-                    </div>
-                    <div>
-                      <span>Travel style: </span>
-                      <a href="#"> Most popular</a>,<a href="#">
-                        Culture and Heritage</a
-                      >
-                    </div>
-                  </li>
-                  <li class="item__price">
-                    <div class="icon__title">
-                        <i class="fal fa-sack-dollar"></i>
-                    </div>
-                    <div>
-                      <span>From </span>
-                      <span class="font-weight-700 orange-text-color"> $ 33</span>
+                    <div class="ms-auto">
+                      <a href="detail-tour.html" class="button border-button">Explore</a>
                     </div>
                   </li>
                 </ul>
@@ -1680,6 +1300,7 @@
             </div>
           </div>
         </div>
+      </div>
       <!-- Destination Item List -->
 
       <ul class="page__pagination">
@@ -1724,232 +1345,227 @@
     </div>
 
     <!-- ======= Testimonial Section ======= -->
-    <div  class="section client__reviews gray-bg">
+    <div class="section client__reviews gray-bg">
       <div class="container">
-        <div class="only__heading text-center">
-          <h3>
-            <a class="dark-text-color hover-to-primary-text" href="#"
-              >What clients say about us?</a
-            >
-          </h3>
-        </div>
-        <div class="client__reviews--rating d-flex">
-          <span class="font-size-16">5.0</span>
-          <div class="rating__stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+        <div class="row">
+          <div class="col-12 col-lg-8 order-2 order-lg-1">
+            <div class="client__reviews--slider">
+              <div class="owl-carousel">
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <span class="number__rating"> / 58 </span>
-          <span> reviews</span>
-        </div>
-        <div class="client__reviews--slider">
-          <div class="owl-carousel">
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="client__reviews--item">
-              <div class="reviews__item--heading">
-                <a href="#" class="dark-text-color hover-to-primary-text">
-                  Tour very well organized ! unforgetable
-                </a>
-              </div>
-              <div class="reviews__item--content">
-                wonderful tour around lan bay. these 2 days were very well
-                organised, from the hostel to the boat. the trip on the boat was
-                perfect despite the bad wether! kayak, bicycle......
-              </div>
-              <div class="reviews__item--user d-flex">
-                <div class="item__user--image">
-                  <a href="#">
-                    <img src="assets/image/user.jpg" alt="user" />
-                  </a>
-                </div>
-                <div class="item__user--info">
-                  <a
-                    href="#"
-                    class="font-size-14 dark-text-color hover-to-primary-text"
-                    >Jeanne Lavault</a
-                  >
-                  <p class="review__time">on Feb 6, 2023</p>
-                  <div class="rating__stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </div>
+          <div class="col-12 col-lg-4 order-1 order-lg-2">
+            <div class="page__title text-center text-md-end">
+              <span> Our Testimonials </span>
+              <h3 class="hover-to-secondary-text">
+                <a href="#" class="dark-text-color hover-to-secondary-text"
+                  >What clients say about us?</a
+                >
+              </h3>
             </div>
           </div>
         </div>
@@ -2092,13 +1708,13 @@
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/boostrap.js"></script>
     <script src="assets/js/date-picker.js"></script>
     <script src="assets/js/popup.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/typed.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

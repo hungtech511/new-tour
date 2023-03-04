@@ -31,9 +31,12 @@
                 </ul>
               </div>
               <div class="top__wrapper--right ms-auto">
-                <ul>
+                <ul class="d-flex align-items-center">
                   <li>
                     <a href="#" class="less-gray-color">English</a>
+                  </li>
+                  <li style="margin-left:20px">
+                    <a href="#" class="less-gray-color">Español</a>
                   </li>
                 </ul>
               </div>
@@ -842,6 +845,9 @@
                     </div>
                   </li>
                   <li>
+                    <a href="about-us.html">With local</a>
+                  </li>
+                  <li>
                     <a href="about-us.html">About us</a>
                   </li>
                   <li>
@@ -1062,13 +1068,44 @@
 
     <!-- ======= Home Background ======= -->
     <div class="home__background">
-      <div
-        class="home__background--desktop background__image"
+      <div class="owl-carousel">
+        <div
+        class="home__background--desktop"
         style="
-          background-image: url(./assets/image/background/vietnam-tours.jpg),
-            linear-gradient(rgb(246 0 1 / 24%), rgb(253 199 3 / 25%));
+          background-image: url(./assets/image/background/customer-background.jpg),
+            linear-gradient(rgb(246 0 1 / 35%), rgb(253 199 3 / 25%));
         ">
+        <div class="overlay-bg"></div>
         <div class="container">
+          <div class="home__background--content">
+            <div class="text-center text-lg-white">
+              <h1 class="text-lg-white font-size-36">
+                The Largest Selection of Private Tour Itineraries in Vietnam
+              </h1>
+              <div class="font-size-16 margin-top-10">
+                <p>
+                  IZITOUR.com offers the largest selection of Private Tour
+                  Itineraries in Vietnam.
+                </p>
+                <p class="mt-0">
+                  Explore more than 1000 activities and tours, from single day
+                  trips to multiple days all meticulously designed by our local
+                  Travel Experts to give you the best Vietnam experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+      class="home__background--desktop"
+      style="
+        background-image: url(./assets/image/background/video.jpg),
+          linear-gradient(rgb(246 0 1 / 35%), rgb(253 199 3 / 25%));
+      ">
+      <div class="overlay-bg"></div>
+      <div class="container">
+        <div class="home__background--content">
           <div class="text-center text-lg-white">
             <h1 class="text-lg-white font-size-36">
               The Largest Selection of Private Tour Itineraries in Vietnam
@@ -1086,6 +1123,8 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
       </div>
     </div>
     <!-- ======= Home Background ======= -->
@@ -1171,7 +1210,7 @@
                       </select>
                     </div>
                     <div class="width-6">
-                      <button class="button orange-button">Search</button>
+                      <button class="button primary-button">Search</button>
                     </div>
                   </div>
                 </form>
@@ -1684,7 +1723,7 @@
                         data-bs-toggle="modal"
                         data-bs-target="#showImageModal"
                         data-bs-whatever="@mdo"
-                        class="button orange-button">
+                        class="button primary-button">
                         Download now
                       </button>
                     </div>

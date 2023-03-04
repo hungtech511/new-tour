@@ -1,30 +1,37 @@
+@use "../helpers/variable";
 @use "../components/tour-list-item";
 @use "../components/pagination";
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 .destination {
-  .breadcrumb__sort {
-    padding-top: 16px;
-  }
-
   .search__form {
+    position: relative;
+    z-index: 2;
+    transform: translateY(-35px);
     margin-bottom: 26px;
-    padding: 10px 0 10px 10px;
-
+    padding: 25px 28px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 2px 40px rgb(0 0 0 / 14%);
+    i {
+      font-size: 16px;
+      color: variable.$secondaryColor;
+    }
+    label {
+      margin-left: 8px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .search__btn {
+      display: flex;
+      align-items: flex-end;
+    }
   }
-
-}
-@include media-breakpoint-up(md){
-    .search__form {
-        .col-lg-2{
-            width: 20%;
-        }
-      }
 }
 @include media-breakpoint-down(lg) {
-    .search__form {
-        border: 1px solid #e3e3e3;
-        border-radius: 5px;
-    }
+  .search__form {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
 }

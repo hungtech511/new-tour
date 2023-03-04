@@ -67,6 +67,9 @@
     .slider__item--image{
       text-align: center;
       overflow:hidden;
+      .overlay{
+        opacity: 0;
+      }
     }
     .team__slider--content {
       position: absolute;

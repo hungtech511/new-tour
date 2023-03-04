@@ -41,6 +41,21 @@ button[disabled]:hover{
   color: variable.$whiteColor;
 }
 
+.border-button{
+  border:1px solid variable.$primaryColor;
+  background:variable.$primaryColor;
+  color:variable.$whiteColor;
+  padding: 4px 20px;
+  line-height: 1.5;
+  border-radius:5px;
+  font-weight: 600;
+  transition:all .3s;
+}
+.border-button:hover{
+  color:variable.$primaryColor;
+  background-color:variable.$whiteColor;
+}
+
 
 .read-more {
   font-size: 14px;

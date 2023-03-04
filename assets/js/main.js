@@ -31,9 +31,12 @@ function renderBackgroundImageHeight() {
 				.css("background-image")
 				.replace(/url\((['"])?(.*?)\1\)/gi, "$2")
 				.split(",")[0];
-
-			imageHeight = img.height;
-			$(this).height(imageHeight);
+			if(img?.height > 561){
+				$(this).height(561);
+			}else{
+				imageHeight = img.height;
+				$(this).height(imageHeight);
+			}
 		});
 	}
 }
@@ -125,6 +128,27 @@ $(document).ready(function () {
 			});
 		});
 	});
+
+	let homeCarousel = function () {
+		if ($().owlCarousel) {
+			$(".home__background").each(function () {
+				$(this)
+					.find(".owl-carousel")
+					.owlCarousel({
+						autoplay: true,
+						dots: false,
+						autoplayTimeout: 2000,
+						nav: true,
+						navText: [
+							"<i class='far fa-chevron-left'></i>",
+							"<i class='far fa-chevron-right'></i>",
+						],
+						items:1,
+					});
+			});
+		}
+	}
+
 	let top10Carousel = function () {
 		if ($().owlCarousel) {
 			$(".top__10--slider").each(function () {
@@ -396,14 +420,17 @@ $(document).ready(function () {
 		});
 	});
 
-	let typed = new Typed(".typing-text", {
-		strings: $(".typing-text").data("text"),
-		typeSpeed: 200,
-		backSpeed: 200,
-		loop: true,
-		showCursor: false,
-	});
+	if($(".typing-text").length){
+		let typed = new Typed(".typing-text", {
+			strings: $(".typing-text").data("text"),
+			typeSpeed: 200,
+			backSpeed: 200,
+			loop: true,
+			showCursor: false,
+		});
+	}
 
+	homeCarousel();
 	top10Carousel();
 	blogCarousel();
 	clientReview();
