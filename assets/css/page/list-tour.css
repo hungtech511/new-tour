@@ -1,18 +1,120 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "../../node_modules/bootstrap/scss/functions";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets/scss/components/_pagination.scss 3:9  @use
- *   assets/scss/page/list-tour.scss 2:1          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"../../node_modules/bootstrap/scss/functions\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets/scss/components/_pagination.scss 3:9  @use\a   assets/scss/page/list-tour.scss 2:1          root stylesheet";
+.destination__item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px -2px 30px 0px rgba(102, 102, 102, 0.09);
+  transition: all 0.3s;
+  position: relative;
 }
+.destination__item .destination__item--image {
+  position: relative;
+}
+.destination__item img {
+  width: 100%;
+}
+.destination__item .destination__duration {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  left: 3%;
+  background: #fff;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 1px solid #e9b754;
+  color: #e9b754;
+}
+.destination__item--content {
+  background: #fff;
+  padding: 30px 20px 20px 20px;
+}
+.destination__item--content h3 {
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+.destination__item--content .item__list li + li {
+  margin-top: 10px;
+}
+.destination__item--content .item__list li {
+  display: flex;
+}
+.destination__item--content .item__list li i {
+  color: #e9b754;
+}
+.destination__item .item__price {
+  background: #fff;
+  padding: 14px !important;
+  padding-left: 0 !important;
+  border-top: 1px solid #e3e3e3;
+}
+.destination__item .item__price span:first-child {
+  margin-right: 14px;
+}
+.destination__item:hover {
+  box-shadow: 0 40px 44px 0 rgba(102, 102, 102, 0.09), 0 40px 44px 0 rgba(102, 102, 102, 0.09);
+}
+.destination__item:hover img {
+  transform: scale(1.05);
+}
+
+.page__pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page__pagination > * {
+  padding: 4px;
+  margin-left: 8px;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  position: relative;
+}
+.page__pagination > .page__active {
+  color: #fff !important;
+  background: #f60001;
+  border: none;
+}
+.page__pagination > .page__active a {
+  color: #fff;
+}
+.page__pagination a {
+  padding: 5px;
+}
+
+@media (max-width: 767.98px) {
+  .page__pagination {
+    margin-top: 30px;
+  }
+}
+.destination .search__form {
+  position: relative;
+  z-index: 2;
+  transform: translateY(-35px);
+  margin-bottom: 26px;
+  padding: 25px 28px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 2px 40px rgba(0, 0, 0, 0.14);
+}
+.destination .search__form i {
+  font-size: 16px;
+  color: #e9b754;
+}
+.destination .search__form label {
+  margin-left: 8px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.destination .search__form .search__btn {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 991.98px) {
+  .search__form {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=list-tour.css.map */

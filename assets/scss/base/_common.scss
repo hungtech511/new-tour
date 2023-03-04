@@ -139,6 +139,16 @@
 .section{
   padding:50px 0;
 }
+.overlay-bg{
+	background-color: #000000;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+	z-index: 1;
+}
 
 .overlay{
   position: absolute;
@@ -148,7 +158,7 @@
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 0.5;
   z-index: 1;
   transition: .5s ease;
   background-color: variable.$blackColor;
@@ -290,9 +300,17 @@
 }
 
 .breadcrumb__sort {
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
+	position: relative;
+	padding:113px 0;
+	background-image:url("../image/background/breadcrumb.jpg");
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	nav{
+		position: relative;
+		z-index: 2;
+	}
+
 	.sort__result {
 		a:not(:last-child) {
 			margin: 0 8px;
@@ -301,11 +319,17 @@
 }
 
 .breadcrumb {
+	&__title{
+		color:variable.$whiteColor;
+		font-size:36px;
+		font-weight: 600;
+		margin-bottom:10px;
+	}
 	li {
 		a {
-			color: variable.$blackColor;
+			color: variable.$whiteColor;
 			&:hover {
-				color: variable.$primaryColor;
+				color: variable.$secondaryColor;
 			}
 		}
 	}
@@ -386,10 +410,6 @@ a {
 			transform: scale3d(1, 1, 1) translateX(50%);
 		}
 	}
-}
-
-.breadcrumb__sort {
-	padding-top: 16px;
 }
 
 .background__image {
