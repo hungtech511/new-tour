@@ -137,8 +137,9 @@ $(document).ready(function () {
 					.owlCarousel({
 						autoplay: true,
 						dots: false,
-						autoplayTimeout: 2000,
+						autoplayTimeout: 5000,
 						nav: true,
+						loop:true,
 						navText: [
 							"<i class='far fa-chevron-left'></i>",
 							"<i class='far fa-chevron-right'></i>",
