@@ -148,6 +148,9 @@
               &.navbar__child--halfWidth > div {
                 width: 50%;
               }
+              &.navbar__child--halfWidth .navbar__column:nth-child(n+3){
+                margin-top:15px;
+              }
             }
             .column__title {
               font-weight: 700;

@@ -12339,6 +12339,9 @@ a:hover {
 .header__desktop .header__bottom .header__navbar .navbar__dropdown > div.navbar__child--halfWidth > div {
   width: 50%;
 }
+.header__desktop .header__bottom .header__navbar .navbar__dropdown > div.navbar__child--halfWidth .navbar__column:nth-child(n+3) {
+  margin-top: 15px;
+}
 .header__desktop .header__bottom .header__navbar .navbar__dropdown .column__title {
   font-weight: 700;
 }
