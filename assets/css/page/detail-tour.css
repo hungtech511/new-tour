@@ -83,6 +83,7 @@
 .destination.detail__destination .destination__detail--right .box__item {
   border: 1px solid #e3e3e3;
   background: #fff;
+  border-radius: 8px;
 }
 .destination.detail__destination .destination__detail--right * + .box__item {
   margin-top: 20px;
@@ -107,7 +108,6 @@
 .destination.detail__destination .destination__detail--right .box__content {
   padding: 20px 14px;
   padding-bottom: 10px;
-  background: #fff;
 }
 .destination.detail__destination .destination__detail--right .box__content form {
   margin-bottom: 10px;
@@ -143,7 +143,7 @@
 }
 .destination.detail__destination .destination__detail--right .box__content--price ul li span {
   font-weight: 700;
-  color: #e9b754;
+  color: #f60001;
   float: right;
 }
 .destination.detail__destination .destination__detail--right .box__content ul.box__list--info li span {
@@ -230,16 +230,8 @@
 }
 .destination.detail__destination .box__detail .accordion__content .title__content {
   padding: 15px 0;
-  padding-left: 25px;
   font-size: 15px;
   position: relative;
-}
-.destination.detail__destination .box__detail .accordion__content .title__content::before {
-  content: "\f594";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 100;
-  position: absolute;
-  left: 0;
 }
 .destination.detail__destination .box__detail .accordion__content .title__content * + p {
   margin-top: 5px;
@@ -308,21 +300,11 @@
 }
 .destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.distance {
   margin-left: 14px;
-  padding-left: 26px;
   position: relative;
   color: #737373;
 }
-.destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.distance::after {
-  content: "\f279";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 400;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li > a span.date__destination {
-  float: right;
+  margin-left: 20px;
   color: #999;
 }
 .destination.detail__destination .box__detail.has__accordion .box__detail--accordion > li .accordion__content {
@@ -399,6 +381,9 @@
   border-radius: unset;
 }
 
+.related__tours h4 {
+  margin-bottom: 20px;
+}
 .related__tours .destination__item {
   border: 1px solid #e3e3e3;
 }
