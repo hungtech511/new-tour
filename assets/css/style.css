@@ -11967,7 +11967,7 @@ h4 {
 .page__title > span {
   display: block;
   margin-bottom: 10px;
-  color: #e9b754;
+  color: #f60001;
   text-transform: uppercase;
   letter-spacing: 3.5px;
 }
@@ -11982,7 +11982,7 @@ h4 {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #e9b754;
+  background: #f60001;
   height: 3px;
   width: 10%;
 }
@@ -12007,14 +12007,14 @@ h4 {
 .play-btn {
   display: block;
   position: relative;
-  background-color: #e9b754;
+  background-color: #f60001;
   border-radius: 50%;
   height: 70px;
   width: 70px;
   margin: 0 auto;
   cursor: pointer;
   animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 0);
-  box-shadow: 0 0 0 0 rgba(233, 183, 84, 0.5);
+  box-shadow: 0 0 0 0 rgba(246, 0, 1, 0.5);
   transition: all 0.3s;
 }
 @keyframes pulse {
@@ -12948,7 +12948,7 @@ button[disabled]:hover {
   content: "";
   width: 100%;
   margin-top: 70px;
-  background: url("../image/slider-pattern.png");
+  background: url("../image/test.png");
 }
 .home__box--search .box__search--desktop .box__search--inner {
   margin-top: -180px;
