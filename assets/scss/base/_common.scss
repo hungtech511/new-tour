@@ -167,7 +167,7 @@
   & > span{
     display: block;
     margin-bottom:10px;
-    color:variable.$secondaryColor;
+    color:variable.$primaryColor;
     text-transform:uppercase;
     letter-spacing:3.5px;
   }
@@ -181,7 +181,7 @@
       position: absolute;
       top:100%;
       left:0;
-      background:variable.$secondaryColor;
+      background:variable.$primaryColor;
       height:3px;
       width:10%;
     }
@@ -208,14 +208,14 @@
 .play-btn{
   display: block;
     position: relative;
-    background-color: variable.$secondaryColor;
+    background-color: variable.$primaryColor;
     border-radius: 50%;
     height: 70px;
     width: 70px;
     margin: 0 auto;
     cursor: pointer;
     animation: pulse 1s infinite cubic-bezier(0.66, 0, 0, 0);
-    box-shadow: 0 0 0 0 rgb(233 183 84 / 50%);
+    box-shadow: 00 0 0 0 rgb(246 0 1 / 50%);
     transition: all .3s;
 
     @keyframes pulse {
@@ -302,7 +302,7 @@
 .breadcrumb__sort {
 	position: relative;
 	padding:113px 0;
-	background-image:url("../image/background/breadcrumb.jpg");
+	background-blend-mode: overlay;
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

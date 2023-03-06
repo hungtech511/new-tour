@@ -5,6 +5,18 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 .destination {
+  .sort__result{
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 12px;
+    margin-bottom:30px;
+    .total__result{
+      font-size: 32px;
+      font-weight:700;
+    }
+    select{
+      border:1px solid transparent;
+    }
+  }
   .search__form {
     position: relative;
     z-index: 2;
@@ -16,7 +28,7 @@
     box-shadow: 10px 2px 40px rgb(0 0 0 / 14%);
     i {
       font-size: 16px;
-      color: variable.$secondaryColor;
+      color: variable.$primaryColor;
     }
     label {
       margin-left: 8px;
