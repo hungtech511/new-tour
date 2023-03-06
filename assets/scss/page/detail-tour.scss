@@ -96,6 +96,7 @@
     .box__item {
       border: 1px solid #e3e3e3;
       background: variable.$whiteColor;
+      border-radius:8px;
     }
     * + .box__item {
       margin-top: 20px;
@@ -120,7 +121,7 @@
     .box__content {
       padding: 20px 14px;
       padding-bottom: 10px;
-      background: variable.$whiteColor;
+      // background: variable.$whiteColor;
       form {
         .date-of-birth-children {
           margin-top: 10px;
@@ -152,7 +153,7 @@
             padding-top: 10px;
             span {
               font-weight: 700;
-              color: variable.$secondaryColor;
+              color: variable.$primaryColor;
               float: right;
             }
           }
@@ -258,16 +259,16 @@
       .accordion__content {
         .title__content {
           padding: 15px 0;
-          padding-left: 25px;
+          // padding-left: 25px;
           font-size: 15px;
           position: relative;
-          &::before {
-            content: "\f594";
-            font-family: "Font Awesome 5 Pro";
-            font-weight: 100;
-            position: absolute;
-            left: 0;
-          }
+          // &::before {
+          //   content: "\f594";
+          //   font-family: "Font Awesome 5 Pro";
+          //   font-weight: 100;
+          //   position: absolute;
+          //   left: 0;
+          // }
           * + p {
             margin-top: 5px;
           }
@@ -340,21 +341,21 @@
             }
             span.distance {
               margin-left: 14px;
-              padding-left: 26px;
+              // padding-left: 26px;
               position: relative;
               color: #737373;
-              &::after {
-                content: "\f279";
-                font-family: "Font Awesome 5 Pro";
-                font-weight: 400;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-              }
+              // &::after {
+              //   content: "\f279";
+              //   font-family: "Font Awesome 5 Pro";
+              //   font-weight: 400;
+              //   position: absolute;
+              //   left: 0;
+              //   top: 50%;
+              //   transform: translateY(-50%);
+              // }
             }
             span.date__destination {
-              float: right;
+              margin-left:20px;
               color: variable.$secondaryGrayColor;
             }
           }
@@ -470,6 +471,9 @@ $container-max-widths: (
 }
 
 .related__tours {
+  h4{
+    margin-bottom:20px;
+  }
   .destination__item {
     border: 1px solid #e3e3e3;
   }

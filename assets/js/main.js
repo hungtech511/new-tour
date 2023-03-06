@@ -351,6 +351,34 @@ $(document).ready(function () {
 		}
 	};
 
+	let releatedTours = function () {
+		if ($().owlCarousel) {
+			$(".related__tours--slider").each(function () {
+				let owl = $(this).find(".owl-carousel");
+
+				owl.owlCarousel({
+					items: 3,
+					autoplay: false,
+					dots: true,
+					autoplayTimeout: 3000,
+					autoplayHoverPause: true,
+					margin: 30,
+					responsive: {
+						0: {
+							items: 1,
+						},
+						576: {
+							items: 2,
+						},
+						992: {
+							items: 3,
+						},
+					},
+				});
+			});
+		}
+	};
+
 	let detailTour = function () {
 		if ($().owlCarousel) {
 			$(".destination__slider").each(function () {
@@ -453,6 +481,7 @@ $(document).ready(function () {
 	lastReview();
 	travelPhoto();
 	detailTour();
+	releatedTours();
 
 	// Scroll to specific tab in detail tour page
 	let backgroundElement = $(".detail__destination").css("background-color");
