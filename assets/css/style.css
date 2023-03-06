@@ -11972,6 +11972,7 @@ h4 {
   letter-spacing: 3.5px;
 }
 .page__title h3 {
+  color: #8B0000;
   font-size: 42px;
   margin-bottom: 25px;
   padding-bottom: 10px;
@@ -12224,7 +12225,7 @@ a:hover {
 }
 .header__desktop .header__top {
   padding: 6px 0;
-  background: #2a2a2a;
+  background: #8B0000;
 }
 .header__desktop .header__bottom {
   background: #fff;
@@ -12490,7 +12491,7 @@ a:hover {
 }
 
 .footer {
-  background: #272727;
+  background: #8B0000;
   padding-top: 55px;
   color: #fff;
   line-height: 24px;
@@ -12948,7 +12949,7 @@ button[disabled]:hover {
   content: "";
   width: 100%;
   margin-top: 70px;
-  background: url("../image/test.png");
+  background: url("../image/slider-pattern-1.png");
 }
 .home__box--search .box__search--desktop .box__search--inner {
   margin-top: -180px;
@@ -14147,50 +14148,61 @@ button[disabled]:hover {
   margin-bottom: 15px;
 }
 
+.destination.detail__destination {
+  padding: 50px 0;
+}
+.destination.detail__destination .destination__slider {
+  margin: 15px 0;
+  position: relative;
+}
+.destination.detail__destination .destination__slider .owl-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px rgba(43, 89, 255, 0.08);
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.destination.detail__destination .destination__slider .owl-nav button i {
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.destination.detail__destination .destination__slider .owl-nav button i:hover {
+  color: #f60001;
+}
+.destination.detail__destination .destination__slider .owl-nav button.owl-prev {
+  margin-left: 20px;
+}
+.destination.detail__destination .destination__slider .owl-nav button.owl-next {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.destination.detail__destination .destination__slider img {
+  position: relative;
+  z-index: 2;
+}
 .destination.detail__destination .destination__detail--left h3 {
   margin-bottom: 20px;
 }
 .destination.detail__destination .destination__detail--left .destination__slider--wrapper {
   margin-bottom: 30px;
 }
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider {
-  margin-top: 15px;
-  position: relative;
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button i {
-  font-size: 30px;
-  transition: color 0.3s;
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button i:hover {
-  color: #f60001;
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button.owl-prev {
-  margin-left: 20px;
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider .owl-nav button.owl-next {
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-}
-.destination.detail__destination .destination__detail--left .destination__slider--wrapper .destination__slider img {
-  position: relative;
-  z-index: 2;
-}
 .destination.detail__destination .destination__detail--left .box__tab--wrapper {
   position: relative;
 }
 .destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab {
-  display: flex;
-  align-items: center;
   padding-bottom: 20px;
 }
 .destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view {
   display: flex;
+  padding-bottom: 30px;
 }
 .destination.detail__destination .destination__detail--left .box__tab--wrapper .box__tab--view li.active > a {
   background: #f60001;
@@ -14300,10 +14312,13 @@ button[disabled]:hover {
   border-top: 1px solid #e5e5e5;
 }
 .destination.detail__destination .box__detail {
+  display: none;
   padding: 20px;
-  border: 1px solid #e3e3e3;
   background: #fff;
   margin-bottom: 20px;
+}
+.destination.detail__destination .box__detail.active {
+  display: block;
 }
 .destination.detail__destination .box__detail h4 {
   margin-bottom: 10px;
