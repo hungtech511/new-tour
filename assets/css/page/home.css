@@ -387,7 +387,7 @@ button[disabled]:hover {
   content: "";
   width: 100%;
   margin-top: 70px;
-  background: url("../image/test.png");
+  background: url("../image/slider-pattern-1.png");
 }
 .home__box--search .box__search--desktop .box__search--inner {
   margin-top: -180px;

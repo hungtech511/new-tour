@@ -56,21 +56,21 @@ window.addEventListener("resize", function () {
 stickyPlaceholder.style.height = header.clientHeight + "px";
 
 $(document).ready(function () {
-	$(window).on("scroll", function () {
-		checkIfElementIsScroll();
-	});
+	// $(window).on("scroll", function () {
+	// 	checkIfElementIsScroll();
+	// });
 
 	// Background page
 	renderBackgroundImageHeight();
 
 	$(document).on({
 		mouseenter: function() {
-			$(this).find("div.navbar__dropdown").addClass("active")
+			$(this).parent().find("div.navbar__dropdown").addClass("active")
 		},
 		mouseleave: function() {
-			$(this).find("div.navbar__dropdown").removeClass("active")
+			$(this).parent().find("div.navbar__dropdown").removeClass("active")
 		}
-	}, '.header__navbar > li');
+	}, '.header__navbar > li > a');
 
 	// render grid dynamic
 	if ($(".top__10--wrapper").length > 0) {
@@ -356,13 +356,13 @@ $(document).ready(function () {
 			$(".destination__slider").each(function () {
 				let owl = $(this).find(".owl-carousel");
 				owl.owlCarousel({
-					autoplay: false,
+					autoplay: true,
 					dots: false,
 					nav: true,
 					mouseDrag: false,
 					autoplayTimeout: 5000,
-					items: 5,
-					margin: 15,
+					items: 3,
+					margin: 30,
 					navText: [
 						"<i class='fal fa-chevron-left'></i>",
 						"<i class='fal fa-chevron-right'></i>",
@@ -377,23 +377,20 @@ $(document).ready(function () {
 						992: {
 							items: 3,
 						},
-						1200: {
-							items: 5,
-						},
 					},
 				});
-				owl.on("changed.owl.carousel", function (property) {
-					let current = property.item.index;
-					let src = $(property.target)
-						.find(".owl-item")
-						.eq(current)
-						.find("img")
-						.attr("src");
-					let imageNeedToChange = document.querySelector(
-						".destination__slider--image img"
-					);
-					imageNeedToChange.src = src;
-				});
+				// owl.on("changed.owl.carousel", function (property) {
+				// 	let current = property.item.index;
+				// 	let src = $(property.target)
+				// 		.find(".owl-item")
+				// 		.eq(current)
+				// 		.find("img")
+				// 		.attr("src");
+				// 	let imageNeedToChange = document.querySelector(
+				// 		".destination__slider--image img"
+				// 	);
+				// 	imageNeedToChange.src = src;
+				// });
 			});
 		}
 	};
@@ -460,39 +457,37 @@ $(document).ready(function () {
 	// Scroll to specific tab in detail tour page
 	let backgroundElement = $(".detail__destination").css("background-color");
 
-	function checkIfElementIsScroll() {
-		if ($(".box__tab--wrapper").length > 0) {
-			let parentElementWidth = $(".box__tab--wrapper").width();
-			let elementPosition =
-				$(".box__tab--wrapper").offset().top - header.clientHeight;
-			let userScroll = window.pageYOffset;
+	// function checkIfElementIsScroll() {
+	// 	if ($(".box__tab--wrapper").length > 0) {
+	// 		let parentElementWidth = $(".box__tab--wrapper").width();
+	// 		let elementPosition =
+	// 			$(".box__tab--wrapper").offset().top - header.clientHeight;
+	// 		let userScroll = window.pageYOffset;
 
-			let styleProperty = {
-				transform: `translateY(${header.clientHeight}px)`,
-				top: 0,
-				position: "fixed",
-				zIndex: 2,
-				width: parentElementWidth,
-				transition: "all .3s",
-				background: backgroundElement,
-			};
+	// 		let styleProperty = {
+	// 			transform: `translateY(${header.clientHeight}px)`,
+	// 			top: 0,
+	// 			position: "fixed",
+	// 			zIndex: 2,
+	// 			width: parentElementWidth,
+	// 			transition: "all .3s",
+	// 			background: backgroundElement,
+	// 		};
 
-			if (userScroll >= elementPosition) {
-				$(".box__tab").css(styleProperty);
-			} else {
-				$(".box__tab").removeAttr("style");
-			}
-		}
-	}
+	// 		if (userScroll >= elementPosition) {
+	// 			$(".box__tab--view").css(styleProperty);
+	// 		} else {
+	// 			$(".box__tab--view").removeAttr("style");
+	// 		}
+	// 	}
+	// }
 
 	// Click to scroll
-	$(".box__tab li a").each(function () {
-		$(this).on("click", function () {
-			var aid = $(this).attr("href");
-			$("html,body").animate(
-				{ scrollTop: $(aid).offset().top - header.clientHeight * 2 },
-				"smooth"
-			);
+	$(".box__tab li").each(function (index) {
+		$([$(".box__tab li")[0], $(".destination__detail--left .box__detail")[0]]).addClass("active")
+		$(this).on("click", function (e) {
+			e.preventDefault();
+			$([$(".box__tab li")[$(this).index()], $(".destination__detail--left .box__detail")[$(this).index()]]).addClass("active").siblings().removeClass("active")
 		});
 	});
 
@@ -501,34 +496,32 @@ $(document).ready(function () {
 		let parentClickAccordion = $(this).parent();
 		$(this).on("click", function (e) {
 			e.preventDefault();
-			if (parentClickAccordion.parent().hasClass("box__content--accordion")) {
-				let siblingElement = $(this).siblings();
-				let totalChildrenHeight = 0;
-				let totalChildrenElements = parentClickAccordion.find(
-					".accordion__content"
-				);
-				if (parentClickAccordion.hasClass("active") === false) {
-					parentClickAccordion.addClass("active");
+			let siblingElement = $(this).siblings();
+			let totalChildrenHeight = 0;
+			let totalChildrenElements = parentClickAccordion.find(
+				".accordion__content"
+			);
+			if (parentClickAccordion.hasClass("active") === false) {
+				parentClickAccordion.addClass("active");
 
-					if (parentClickAccordion.hasClass("active")) {
-						totalChildrenElements.children().each(function () {
-							totalChildrenHeight += $(this).outerHeight(true);
-						});
-					}
-
-					siblingElement.height(totalChildrenHeight);
-
-					if (parentClickAccordion.siblings().hasClass("active")) {
-						parentClickAccordion.siblings().removeClass("active");
-						parentClickAccordion
-							.siblings()
-							.find(".accordion__content")
-							.height(0);
-					}
-				} else if (parentClickAccordion.hasClass("active")) {
-					parentClickAccordion.removeClass("active");
-					siblingElement.height(0);
+				if (parentClickAccordion.hasClass("active")) {
+					totalChildrenElements.children().each(function () {
+						totalChildrenHeight += $(this).outerHeight(true);
+					});
 				}
+
+				siblingElement.height(totalChildrenHeight);
+
+				if (parentClickAccordion.siblings().hasClass("active")) {
+					parentClickAccordion.siblings().removeClass("active");
+					parentClickAccordion
+						.siblings()
+						.find(".accordion__content")
+						.height(0);
+				}
+			} else if (parentClickAccordion.hasClass("active")) {
+				parentClickAccordion.removeClass("active");
+				siblingElement.height(0);
 			}
 		});
 	});
