@@ -5,23 +5,14 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 .contact-us {
-  .breadcrumb__sort {
-    padding-top: 16px;
-  }
   .contact-us-container {
     background-color: #fff;
     padding: 30px 30px 70px 24px;
     form {
       .form-group {
-        input {
-          width: 75%;
-        }
         textarea {
           padding: 14px;
-          width: 75%;
-        }
-        input[name="verify-code"] {
-          width: 30%;
+          width: 100%;
         }
       }
       //   select {

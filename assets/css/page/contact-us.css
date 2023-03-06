@@ -1,19 +1,10 @@
-.contact-us .breadcrumb__sort {
-  padding-top: 16px;
-}
 .contact-us .contact-us-container {
   background-color: #fff;
   padding: 30px 30px 70px 24px;
 }
-.contact-us .contact-us-container form .form-group input {
-  width: 75%;
-}
 .contact-us .contact-us-container form .form-group textarea {
   padding: 14px;
-  width: 75%;
-}
-.contact-us .contact-us-container form .form-group input[name=verify-code] {
-  width: 30%;
+  width: 100%;
 }
 .contact-us .contact-us-container form button {
   display: flex;
