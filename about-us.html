@@ -1081,7 +1081,7 @@
     </header>
     <!-- ======= Header ======= -->
     <div class="sticky-placeholder"></div>
-    <div class="about-us gray-bg">
+
       <div class="breadcrumb__sort mb-4" style="
       background-image: url(https://www.linkpicture.com/q/customer-background.jpg),
         linear-gradient(rgb(246 0 1 / 35%), rgb(253 199 3 / 25%));
@@ -1099,168 +1099,257 @@
           </nav>
         </div>
       </div>
+      
+    <!-- ======= About Us Section ======= -->
+    <div class="section about__us--section">
       <div class="container">
-        <div class="about-us-container">
-          <div class="row">
-            <div class="col-6 col-lg-4">
-              <div class="about-us__img">
-                <img src="./assets/image/about-us/izitour-team.jpeg" alt="" />
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="about__inner">
+              <div class="about__inner--left">
+                <a href="about.html">
+                  <img src="assets/image/about-us-1.jpg" alt="team company" />
+                </a>
+              </div>
+              <div class="about__inner--right">
+                <a href="about.html">
+                  <img src="assets/image/about-us-2.jpg" alt="team company" />
+                </a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="only__heading">
-                <h3>ABOUT US</h3>
-              </div>
-              <div>
-                <p class="font-size-14">
-                  IZITOUR.com is a brand of
-                  <span class="primary-text-color">Authentik Travel</span> – an
-                  inbound travel agency approved by the Vietnam National
-                  Administration of Tourism
-                  <span class="primary-text-color font-weight-700"
-                    >with full international tour operator license.</span
-                  >
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="page__title">
+              <span>Who We Are</span>
+              <h3 class="has-border">
+                Enjoy Adventure In The World With Our Travel
+              </h3>
+            </div>
+            <div class="box__content">
+              <div class="box__content--item">
+                <p>
+                  Experiencias locales is a brand of an inbound travel agency
+                  approved by the Vietnam National Administration of Tourism
                 </p>
                 <p>
-                  IZITOUR.com is the most
-                  <span class="dark-text-color"
+                  Experiencias locales is the most
+                  <strong
                     >Unique Platform of Private Tour Itineraries in
-                    Vietnam</span
+                    Vietnam</strong
                   >. Izitour enables you to create your own holiday at ease.
                   Here you will find numerous activities and tours spanning from
                   one day to multiple days. All tours are designed and assembled
                   carefully by our local travel experts.
                 </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="why-travel">
-                <h4 class="font-size-14 dark-text-color">
-                  Why travel with us ?
-                </h4>
-                <ul class="list margin-top-20">
-                  <li>
-                    <img src="./assets/image/about-us/numerous.svg" alt="" />
-                    <span>More than 1000 activities and itineraries</span>
-                  </li>
-                  <li>
-                    <img src="./assets/image/about-us/numerous.svg" alt="" />
-                    <span>More than 1000 activities and itineraries</span>
-                  </li>
-                  <li>
-                    <img src="./assets/image/about-us/numerous.svg" alt="" />
-                    <span>More than 1000 activities and itineraries</span>
-                  </li>
-                  <li>
-                    <img src="./assets/image/about-us/numerous.svg" alt="" />
-                    <span>More than 1000 activities and itineraries</span>
-                  </li>
-                  <li>
-                    <img src="./assets/image/about-us/numerous.svg" alt="" />
-                    <span>More than 1000 activities and itineraries</span>
-                  </li>
-                </ul>
+                <div class="download-pdf">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img
+                        src="assets/image/vietnam-free-ebook.png"
+                        alt="ebook" />
+                    </div>
+                    <div class="col-lg-8 download-content">
+                      <h3>
+                        Free Ebook <br />
+                        Viet Nam
+                      </h3>
+                      <p>
+                        More than 100 pages, full of tips, routes, inspiration &
+                        background information!
+                      </p>
+                      <button
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#showImageModal"
+                        data-bs-whatever="@mdo"
+                        class="button primary-button">
+                        Download now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="modal fade"
+                  id="showImageModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5
+                          class="modal-title font-size-18 primary-text-color"
+                          id="staticBackdropLabel">
+                          Please write email then we will send you E-Book
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="" class="needs-validation" novalidate>
+                          <div class="row g-2">
+                            <div class="col-lg-12">
+                              <div class="form-group">
+                                <label for="firstNameInput">First Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="firstNameInput"
+                                  aria-describedby="emailHelp"
+                                  placeholder="First Name"
+                                  name="firstname"
+                                  required />
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-group">
+                                <label for="emailInput">Email</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="emailInput"
+                                  aria-describedby="emailHelp"
+                                  placeholder="Email"
+                                  name="email"
+                                  required />
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="form-group">
+                                <label for="nationalitySelect"
+                                  >Please choose language for book</label
+                                >
+                                <select name="nationality" class="select__form">
+                                  <option value="1">English</option>
+                                  <option value="2">Español</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="text-center">
+                                <button
+                                  class="button orange-button"
+                                  type="submit">
+                                  Send
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="founders-container">
-          <div class="heading__section">
-            <h3>FOUNDERS</h3>
-            <p class="font-size-14">
-              IZITOUR was founded in 2019 by three friends who share the same
-              vision: Make Vietnam easy for You!
-            </p>
-          </div>
-          <div class="founder-list">
-            <div class="row">
-              <div class="col-12 col-lg-4">
-                <div class="founder-item">
-                  <div class="founder-avatar">
-                    <img
-                      src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder-info">
-                    <h4 class="founder-info__name font-size-16 dark-text-color">
-                      Ngoc Tu DINH
-                    </h4>
-                    <h4
-                      class="founder-info__office font-size-16 font-weight-400"
-                    >
-                      CEO
-                    </h4>
-                    <p class="founder-info__des">
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when an unknown printer
-                      took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="founder-item">
-                  <div class="founder-avatar">
-                    <img
-                      src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="founder-info">
-                    <h4 class="founder-info__name font-size-16 dark-text-color">
-                      Ngoc Tu DINH
-                    </h4>
-                    <h4
-                      class="founder-info__office font-size-16 font-weight-400"
-                    >
-                      CEO
-                    </h4>
-                    <p class="founder-info__des">
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when an unknown printer
-                      took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem
-                    </p>
+      </div>
+    </div>
+    <!-- ======= About Us Section ======= -->
+        <!-- <div class="founders-container">
+          <div class="container">
+            <div class="heading__section">
+              <h3>FOUNDERS</h3>
+              <p class="font-size-14">
+                IZITOUR was founded in 2019 by three friends who share the same
+                vision: Make Vietnam easy for You!
+              </p>
+            </div>
+            <div class="founder-list">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="founder-item">
+                    <div class="founder-avatar">
+                      <img
+                        src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="founder-info">
+                      <h4 class="founder-info__name font-size-16 dark-text-color">
+                        Ngoc Tu DINH
+                      </h4>
+                      <h4
+                        class="founder-info__office font-size-16 font-weight-400"
+                      >
+                        CEO
+                      </h4>
+                      <p class="founder-info__des">
+                        is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s
+                        with the release of Letraset sheets containing Lorem
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="founder-item">
-                  <div class="founder-avatar">
-                    <img
-                      src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
-                      alt=""
-                    />
+                <div class="col-12 col-lg-4">
+                  <div class="founder-item">
+                    <div class="founder-avatar">
+                      <img
+                        src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="founder-info">
+                      <h4 class="founder-info__name font-size-16 dark-text-color">
+                        Ngoc Tu DINH
+                      </h4>
+                      <h4
+                        class="founder-info__office font-size-16 font-weight-400"
+                      >
+                        CEO
+                      </h4>
+                      <p class="founder-info__des">
+                        is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s
+                        with the release of Letraset sheets containing Lorem
+                      </p>
+                    </div>
                   </div>
-                  <div class="founder-info">
-                    <h4 class="founder-info__name font-size-16 dark-text-color">
-                      Ngoc Tu DINH
-                    </h4>
-                    <h4
-                      class="founder-info__office font-size-16 font-weight-400"
-                    >
-                      CEO
-                    </h4>
-                    <p class="founder-info__des">
-                      is simply dummy text of the printing and typesetting
-                      industry. Lorem Ipsum has been the industry's standard
-                      dummy text ever since the 1500s, when an unknown printer
-                      took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries,
-                      but also the leap into electronic typesetting, remaining
-                      essentially unchanged. It was popularised in the 1960s
-                      with the release of Letraset sheets containing Lorem
-                    </p>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="founder-item">
+                    <div class="founder-avatar">
+                      <img
+                        src="./assets/image/about-us/founders/Ngoc-Tu-DINH.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="founder-info">
+                      <h4 class="founder-info__name font-size-16 dark-text-color">
+                        Ngoc Tu DINH
+                      </h4>
+                      <h4
+                        class="founder-info__office font-size-16 font-weight-400"
+                      >
+                        CEO
+                      </h4>
+                      <p class="founder-info__des">
+                        is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining
+                        essentially unchanged. It was popularised in the 1960s
+                        with the release of Letraset sheets containing Lorem
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1268,208 +1357,624 @@
           </div>
         </div>
         <div class="our-tour-container">
-          <div class="heading__section">
-            <h3>OUR TOUR</h3>
+          <div class="container">
+            <div class="heading__section">
+              <h3>OUR TOUR</h3>
+            </div>
+            <p class="font-size-14">
+              Our experts have meticulously designed an elaborate system of tours
+              from 1 day to several days which will help you plan your ideal trip.
+              The tour system includes THREE main types:
+            </p>
+            <div class="our-tour-button-list">
+              <a class="button primary-button" >
+                PART 1: TOUR BY DESTINATION
+              </a>
+              <a class="button primary-button" >PART 2: TOUR PACKAGE</a>
+              <a class="button primary-button" >
+                PART 3: CRUISES IN HALONG BAY & MEKONG DELTA
+              </a>
+            </div>
+            <p class="font-size-14">
+              Following is the details of these tours. Reading through the
+              information will help you select the most suitable tour for
+              yourself.
+            </p>
           </div>
-          <p class="font-size-14">
-            Our experts have meticulously designed an elaborate system of tours
-            from 1 day to several days which will help you plan your ideal trip.
-            The tour system includes THREE main types:
-          </p>
-          <div class="our-tour-button-list">
-            <a class="button primary-button" >
-              PART 1: TOUR BY DESTINATION
-            </a>
-            <a class="button primary-button" >PART 2: TOUR PACKAGE</a>
-            <a class="button primary-button" >
-              PART 3: CRUISES IN HALONG BAY & MEKONG DELTA
-            </a>
-          </div>
-          <p class="font-size-14">
-            Following is the details of these tours. Reading through the
-            information will help you select the most suitable tour for
-            yourself.
-          </p>
         </div>
         <div class="our-tour-section" id="our-tour-section-0">
-          <div class="section__title">
-            <h4>Part 1: TOUR BY DESTINATION</h4>
-          </div>
-          <p class="font-size-14 mb-4">
-            Tour by destination is the collection of all tours starting from the
-            big cities (Hanoi, Ho Chi Minh City, Da Nang, Hue, Hoi An, Phu Quoc)
-            varying from half day trips to multiple days. These tours are
-            tailored to specific travel styles (authentic tours, most popular
-            tours, adventure tours, food tours, culture and heritage tours,
-            nature and discovery tours) bringing tourists to discover the
-            destinations and their vicinities. Tour by destination is designed
-            for foreigners living in Vietnam, backpackers, nomads and others who
-            want to discover different regions of Vietnam freely. Tours by
-            destination comprises of these smaller modules:
-          </p>
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <img
-                src="https://izitour.com/themes/web/img/about/map-vietnam.jpg"
-                alt=""
-              />
+          <div class="container">
+            <div class="section__title">
+              <h4>Part 1: TOUR BY DESTINATION</h4>
             </div>
-            <div class="col-12 col-lg-7">
-              <div class="our-tour-content">
-                <div>
-                  <h4 class="font-size-14">NORTHERN REGION:</h4>
-                  <p>
-                    <div><b>Hanoi and Vicinity:</b>
-                      <span
-                        >Tours start from Hanoi, visiting Hanoi and vicinity
-                        including Ninh Binh, Mai Chau, Pu Luong, Halong Bay, Cat Ba
-                        Island</span
-                      ></div>
-                      <div>
-                        <b>Sapa & North West:</b> <span>Tours start from Hanoi, discovering Sapa, Bac Ha and northwestern mountainous regions including Mu Cang Chai, Nghia Lo, Tu Le, Dien Bien Phu, Lai Chau, Thac Ba</span>
-                      </div>
-                      <div>
-                        <b>Ha Giang & North East:</b> <span>Tours start from Hanoi, travelling through the northeastern mountainous regions of Vietnam including Ha Giang, Dong Van, Lung Cu, Meo Vac, Bao Lac, Cao Bang, Ba Be, Bac Son</span>
-                      </div>
-                  </p>
-                </div>
-                <div>
-                  <h4 class="font-size-14">CENTRAL REGION:</h4>
-                  <p>
-                    <div><b> Hue – Hoi An & Vicinities: </b>
-                      <span
-                        >Tours start from Hue City, Hoi An or Da Nang to visit every corner of these travel hubs and vicinities like Phong Nha – Ke Bang, My Son Sanctuary, Demilitarized Zone (DMZ) Vietnam
-                        </span
-                      ></div>
-                      <div>
-                        <b>Da Lat & Central Highland:</b> <span>Tours start from Da Lat & Buon Ma Thuot to discover local features, villages, natural landscape in Gia Lai, Kon Tum, Pleiku, Buon Me Thuot, Da Lat</span>
-                      </div>
-                  </p>
-                </div>
-                <div>
-                  <h4 class="font-size-14">SOUTHERN REGION:</h4>
-                  <p>
-                    <div><b>  Ho Chi Minh City & Mekong Delta:  </b>
-                      <span
-                        >Tours start from Ho Chi Minh City to visit beauty spot of city and Mekong Delta (Cu Chi, Tay Ninh, Ben Tre, My Tho, Cai Be, Can Tho, Chau Doc)
-                        </span
-                      ></div>
-                  </p>
+            <p class="font-size-14 mb-4">
+              Tour by destination is the collection of all tours starting from the
+              big cities (Hanoi, Ho Chi Minh City, Da Nang, Hue, Hoi An, Phu Quoc)
+              varying from half day trips to multiple days. These tours are
+              tailored to specific travel styles (authentic tours, most popular
+              tours, adventure tours, food tours, culture and heritage tours,
+              nature and discovery tours) bringing tourists to discover the
+              destinations and their vicinities. Tour by destination is designed
+              for foreigners living in Vietnam, backpackers, nomads and others who
+              want to discover different regions of Vietnam freely. Tours by
+              destination comprises of these smaller modules:
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-5">
+                <img
+                  src="https://izitour.com/themes/web/img/about/map-vietnam.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 col-lg-7">
+                <div class="our-tour-content">
+                  <div>
+                    <h4 class="font-size-14">NORTHERN REGION:</h4>
+                    <p>
+                      <div><b>Hanoi and Vicinity:</b>
+                        <span
+                          >Tours start from Hanoi, visiting Hanoi and vicinity
+                          including Ninh Binh, Mai Chau, Pu Luong, Halong Bay, Cat Ba
+                          Island</span
+                        ></div>
+                        <div>
+                          <b>Sapa & North West:</b> <span>Tours start from Hanoi, discovering Sapa, Bac Ha and northwestern mountainous regions including Mu Cang Chai, Nghia Lo, Tu Le, Dien Bien Phu, Lai Chau, Thac Ba</span>
+                        </div>
+                        <div>
+                          <b>Ha Giang & North East:</b> <span>Tours start from Hanoi, travelling through the northeastern mountainous regions of Vietnam including Ha Giang, Dong Van, Lung Cu, Meo Vac, Bao Lac, Cao Bang, Ba Be, Bac Son</span>
+                        </div>
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="font-size-14">CENTRAL REGION:</h4>
+                    <p>
+                      <div><b> Hue – Hoi An & Vicinities: </b>
+                        <span
+                          >Tours start from Hue City, Hoi An or Da Nang to visit every corner of these travel hubs and vicinities like Phong Nha – Ke Bang, My Son Sanctuary, Demilitarized Zone (DMZ) Vietnam
+                          </span
+                        ></div>
+                        <div>
+                          <b>Da Lat & Central Highland:</b> <span>Tours start from Da Lat & Buon Ma Thuot to discover local features, villages, natural landscape in Gia Lai, Kon Tum, Pleiku, Buon Me Thuot, Da Lat</span>
+                        </div>
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="font-size-14">SOUTHERN REGION:</h4>
+                    <p>
+                      <div><b>  Ho Chi Minh City & Mekong Delta:  </b>
+                        <span
+                          >Tours start from Ho Chi Minh City to visit beauty spot of city and Mekong Delta (Cu Chi, Tay Ninh, Ben Tre, My Tho, Cai Be, Can Tho, Chau Doc)
+                          </span
+                        ></div>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="our-tour-section" id="our-tour-section-1">
-          <div class="section__title">
-            <h4>Part 2: PACKAGE TOUR</h4>
-          </div>
-          <p class="font-size-14 mb-4">
-            Package tours are designed for tourists with a limited amount of
-            time for planning a tour. We provide a wide selection of package
-            tours all around Vietnam. All-inclusive package tours include
-            services such as airport transfer, private car following your
-            itinerary, English-speaking tour guide, domestic flight tickets,
-            entrance fees, accommodation, some meals. Tour packages are divided
-            into 7 regions:
-          </p>
-          <div class="tour-section-img__list">
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
-            <a href="#">
-              <img
-                src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
-                alt=""
-              />
-              <span class="font-size-14 font-weight-700"
-                >Northern Vietnam Tours</span
-              >
-            </a>
+          <div class="container">
+            <div class="section__title">
+              <h4>Part 2: PACKAGE TOUR</h4>
+            </div>
+            <p class="font-size-14 mb-4">
+              Package tours are designed for tourists with a limited amount of
+              time for planning a tour. We provide a wide selection of package
+              tours all around Vietnam. All-inclusive package tours include
+              services such as airport transfer, private car following your
+              itinerary, English-speaking tour guide, domestic flight tickets,
+              entrance fees, accommodation, some meals. Tour packages are divided
+              into 7 regions:
+            </p>
+            <div class="tour-section-img__list">
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+              <a href="#">
+                <img
+                  src="https://izitour.com/themes/web/img/about/northern-vietnam-tours.jpg"
+                  alt=""
+                />
+                <span class="font-size-14 font-weight-700"
+                  >Northern Vietnam Tours</span
+                >
+              </a>
+            </div>
           </div>
         </div>
         <div class="our-tour-section" id="our-tour-section-2">
-          <div class="section__title">
-            <h4>Part 3: CRUISES IN VIETNAM</h4>
-          </div>
-          <p class="font-size-14 mb-4">
-            All the cruise programs in Halong Bay, Mekong Delta & Cambodia from
-            2 days to 8 days.
-          </p>
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <a href="#" class="our-tour-section__img">
-                <img
-                  src="./assets/image/about-us/our-tour/halong-bay-cruise.jpg"
-                  alt=""
-                />
-                <p class="font-size-16 font-weight-700">Halong Bay Cruises</p>
-              </a>
+          <div class="container">
+            <div class="section__title">
+              <h4>Part 3: CRUISES IN VIETNAM</h4>
             </div>
-            <div class="col-12 col-lg-6">
-              <a href="#" class="our-tour-section__img">
-                <img
-                  src="./assets/image/about-us/our-tour/halong-bay-cruise.jpg"
-                  alt=""
-                />
-                <p class="font-size-16 font-weight-700">Halong Bay Cruises</p>
+            <p class="font-size-14 mb-4">
+              All the cruise programs in Halong Bay, Mekong Delta & Cambodia from
+              2 days to 8 days.
+            </p>
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <a href="#" class="our-tour-section__img">
+                  <img
+                    src="./assets/image/about-us/our-tour/halong-bay-cruise.jpg"
+                    alt=""
+                  />
+                  <p class="font-size-16 font-weight-700">Halong Bay Cruises</p>
+                </a>
+              </div>
+              <div class="col-12 col-lg-6">
+                <a href="#" class="our-tour-section__img">
+                  <img
+                    src="./assets/image/about-us/our-tour/halong-bay-cruise.jpg"
+                    alt=""
+                  />
+                  <p class="font-size-16 font-weight-700">Halong Bay Cruises</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+    		<div class="section vietnam__package--tours">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="box__content">
+              <div class="page__title text-center">
+                <span>Love where you are going!</span>
+                <h3 class="text-white">
+                  Love Explore Your Life,
+                  <span
+                    class="primary-text-color typing-text"
+                    data-text='["Travel Where"]'></span>
+                  You Want!
+                </h3>
+                <p class="text-white">Explore what you don't know</p>
+              </div>
+              <a
+                href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
+                class="play-btn text-center">
               </a>
             </div>
           </div>
         </div>
+
+            <!-- ======= Testimonial Section ======= -->
+    <div class="section client__reviews gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-8 order-2 order-lg-1">
+            <div class="client__reviews--slider">
+              <div class="owl-carousel">
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__reviews--item">
+                  <div class="reviews__item--heading">
+                    <a href="#" class="dark-text-color hover-to-primary-text">
+                      Tour very well organized ! unforgetable
+                    </a>
+                  </div>
+                  <div class="reviews__item--content">
+                    wonderful tour around lan bay. these 2 days were very well
+                    organised, from the hostel to the boat. the trip on the boat
+                    was perfect despite the bad wether! kayak, bicycle......
+                  </div>
+                  <div class="reviews__item--user d-flex">
+                    <div class="item__user--image">
+                      <a href="#">
+                        <img src="assets/image/user.jpg" alt="user" />
+                      </a>
+                    </div>
+                    <div class="item__user--info">
+                      <a
+                        href="#"
+                        class="font-size-14 dark-text-color hover-to-primary-text"
+                        >Jeanne Lavault</a
+                      >
+                      <p class="review__time">on Feb 6, 2023</p>
+                      <div class="rating__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 order-1 order-lg-2">
+            <div class="page__title text-center text-md-end">
+              <span> Our Testimonials </span>
+              <h3>
+                What clients say about us?
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="text-end">
+          <a href="#" class="read-more hover-to-primary-text">
+            Read more
+            <i class="fal fa-chevron-right"></i>
+          </a>
+        </div>
       </div>
     </div>
+    <!-- ======= Testimonial Section ======= -->
+
+        <!-- ======= Our Team Section ======= -->
+        <div class="section our__team">
+          <div class="container">
+            <div class="page__title text-center">
+              <span>Tour Guides</span>
+              <h3 class="has-border border-center">Meet Our Excellent Guides</h3>
+            </div>
+            <div class="our__team--slider">
+              <div class="owl-carousel">
+                <div class="team__slider--item">
+                  <div class="slider__item--image">
+                    <div class="overlay"></div>
+                    <a href="#">
+                      <img src="assets/image/team.jpg" alt="user team" />
+                    </a>
+                  </div>
+                  <div class="team__slider--content">
+                    <div class="slider__item--info">
+                      <a
+                        href="#"
+                        class="our__team--name hover-to-secondary-text dark-text-color"
+                        >Anh Hoang</a
+                      >
+                      <p href="#" class="our__team--position dark-text-color">
+                        Logistic
+                      </p>
+                    </div>
+                    <div class="slider__item--say">
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                    </div>
+                  </div>
+                </div>
+                <div class="team__slider--item">
+                  <div class="slider__item--image">
+                    <div class="overlay"></div>
+                    <a href="#">
+                      <img src="assets/image/team.jpg" alt="user team" />
+                    </a>
+                  </div>
+                  <div class="team__slider--content">
+                    <div class="slider__item--info">
+                      <a
+                        href="#"
+                        class="our__team--name hover-to-secondary-text dark-text-color"
+                        >Anh Hoang</a
+                      >
+                      <p href="#" class="our__team--position dark-text-color">
+                        Logistic
+                      </p>
+                    </div>
+                    <div class="slider__item--say">
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                    </div>
+                  </div>
+                </div>
+                <div class="team__slider--item">
+                  <div class="slider__item--image">
+                    <div class="overlay"></div>
+                    <a href="#">
+                      <img src="assets/image/team.jpg" alt="user team" />
+                    </a>
+                  </div>
+                  <div class="team__slider--content">
+                    <div class="slider__item--info">
+                      <a
+                        href="#"
+                        class="our__team--name hover-to-secondary-text dark-text-color"
+                        >Anh Hoang</a
+                      >
+                      <p href="#" class="our__team--position dark-text-color">
+                        Logistic
+                      </p>
+                    </div>
+                    <div class="slider__item--say">
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                    </div>
+                  </div>
+                </div>
+                <div class="team__slider--item">
+                  <div class="slider__item--image">
+                    <div class="overlay"></div>
+                    <a href="#">
+                      <img src="assets/image/team.jpg" alt="user team" />
+                    </a>
+                  </div>
+                  <div class="team__slider--content">
+                    <div class="slider__item--info">
+                      <a
+                        href="#"
+                        class="our__team--name hover-to-secondary-text dark-text-color">
+                        Anh Hoang
+                      </a>
+                      <p href="#" class="our__team--position dark-text-color">
+                        Logistic
+                      </p>
+                    </div>
+                    <div class="slider__item--say">
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                    </div>
+                  </div>
+                </div>
+                <div class="team__slider--item">
+                  <div class="slider__item--image">
+                    <div class="overlay"></div>
+                    <a href="#">
+                      <img src="assets/image/team.jpg" alt="user team" />
+                    </a>
+                  </div>
+                  <div class="team__slider--content">
+                    <div class="slider__item--info">
+                      <a
+                        href="#"
+                        class="our__team--name hover-to-secondary-text dark-text-color"
+                        >Anh Hoang</a
+                      >
+                      <p href="#" class="our__team--position dark-text-color">
+                        Logistic
+                      </p>
+                    </div>
+                    <div class="slider__item--say">
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                      I am Hoang Anh, a graduate of Hanoi University, specializing
+                      in interpreting - translation. I come from Nam Dinh, the
+                      homeland of...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-end">
+              <a href="#" class="read-more hover-to-primary-text">
+                Read more
+                <i class="fal fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- ======= Our Team Section ======= -->
+
+
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -1602,6 +2107,7 @@
     <script src="assets/js/boostrap.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/popup.js"></script>
+    <script src="assets/js/typed.js"></script>
     <script src="assets/js/date-picker.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
