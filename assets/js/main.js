@@ -51,6 +51,7 @@ window.addEventListener("resize", function () {
 
 	if (hasTouchScreen)
 		stickyPlaceholder.style.height = header.clientHeight + "px";
+		renderBackgroundImageHeight();
 });
 
 stickyPlaceholder.style.height = header.clientHeight + "px";
@@ -423,6 +424,24 @@ $(document).ready(function () {
 		}
 	};
 
+	let detailTransportTour = function () {
+		if ($().owlCarousel) {
+			$(".transport__slider").each(function () {
+				let owl = $(this).find(".owl-carousel");
+				owl.owlCarousel({
+					autoplay: true,
+					dots: false,
+					nav: true,
+					items:1,
+					navText: [
+						"<i class='fal fa-chevron-left'></i>",
+						"<i class='fal fa-chevron-right'></i>",
+					]
+				});
+			});
+		}
+	};
+
 	$(".destination__slider").magnificPopup({
 		delegate: "a",
 		type: "image",
@@ -482,6 +501,7 @@ $(document).ready(function () {
 	travelPhoto();
 	detailTour();
 	releatedTours();
+	detailTransportTour();
 
 	// Scroll to specific tab in detail tour page
 	let backgroundElement = $(".detail__destination").css("background-color");
@@ -519,6 +539,7 @@ $(document).ready(function () {
 			$([$(".box__tab li")[$(this).index()], $(".destination__detail--left .box__detail")[$(this).index()]]).addClass("active").siblings().removeClass("active")
 		});
 	});
+
 
 	// Click accordion heading in detail tour page
 	$(".box__detail .box__accordion--title").each(function () {

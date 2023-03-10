@@ -278,6 +278,33 @@ button[disabled]:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.transport__slider--item {
+  position: relative;
+}
+.transport__slider--item .transport__title {
+  padding: 10px;
+  text-align: center;
+  background: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.transport__slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+.transport__slider button i {
+  font-size: 20px;
+}
+.transport__slider button.owl-next {
+  right: 0;
+  margin-right: 10px;
+}
+
 .owl-carousel .owl-dots {
   text-align: center;
   margin: 20px 0;

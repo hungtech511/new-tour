@@ -176,6 +176,36 @@
   }
 }
 
+
+.transport__slider{
+  &--item{
+    position: relative;
+    .transport__title{
+      padding:10px;
+      text-align:center;
+      background:rgba(34,34,34,.8);
+      color:variable.$whiteColor;
+      position: absolute;
+      bottom:0;
+      left:0;
+      right:0;
+    }
+  }
+  button{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    margin-left:10px;
+    i{
+      font-size: 20px;
+    }
+  }
+  button.owl-next{
+    right:0;
+    margin-right:10px;
+  }
+}
+
 .owl-carousel {
   .owl-dots {
     text-align: center;
