@@ -37,6 +37,7 @@ function renderBackgroundImageHeight() {
 				imageHeight = img.height;
 				$(this).height(imageHeight);
 			}
+			console.log(img.height);
 		});
 	}
 }
