@@ -620,9 +620,12 @@ $(document).ready(function () {
 		}
 	});
 
-	$(".date__picker").datepicker({
-		format: "yyyy/mm/dd",
-	});
+	$(".date__picker").each(function(){
+		$(this).datepicker({
+			format: "yyyy/mm/dd",
+		});
+	})
+
 	$(".date__picker")
 		.datepicker("setDate", new Date())
 		.on("change", function () {

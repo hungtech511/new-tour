@@ -1,0 +1,50 @@
+.local__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+.local__list--item {
+  display: flex;
+  align-items: center;
+}
+.local__list--item h3 {
+  font-size: 20px;
+}
+.local__list--item .item__icon {
+  border: 5px solid #f60001;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 70px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 20px;
+}
+.local__list--item .item__icon i {
+  color: #f60001;
+}
+.local .box__local li {
+  margin-right: 10px;
+}
+.local .box__local a {
+  font-size: 0.875em;
+  color: #fff;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  background: #333;
+  font-weight: 500;
+}
+.local .box__local a.active {
+  background: #f60001;
+}
+.local .box__local .tab-pane {
+  margin-top: 10px;
+}
+.local .box__local .tab-pane.active {
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=local.css.map */
