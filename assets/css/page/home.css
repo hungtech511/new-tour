@@ -412,6 +412,7 @@ button[disabled]:hover {
   background: #f60001;
 }
 .home__box--search .box__search--desktop .box__search--shape {
+  height: 145px;
   background-size: cover;
   background-repeat: no-repeat;
   content: "";
